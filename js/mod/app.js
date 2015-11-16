@@ -1,4 +1,4 @@
-angular.module('ionicApp', ['ionic'])
+angular.module('HeraldApp', ['ionic'])
 .config(function($stateProvider, $urlRouterProvider) {
     $stateProvider
     .state(
@@ -13,7 +13,7 @@ angular.module('ionicApp', ['ionic'])
             url:"/home",
             views:{
                 "home":{
-                    templateUrl:"pages/state1.html",
+                    templateUrl:"pages/home.html",
                     controller:"MyCtrl"
                 }
             }

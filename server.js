@@ -15,10 +15,13 @@ app.get('/api', function (req, res) {
   console.log('params:'+JSON.stringify(req.params));
 });
 app.post('/api',function(req,res){
-    res.send('Hello World!');
-    console.log('query'+JSON.stringify(req.query));
-    console.log('body'+JSON.stringify(req.body));
-    console.log('params:'+JSON.stringify(req.params));
+
+    var query_par = JSON.stringify(req.query);
+    var send_body = JSON.stringify(req.body);
+    var send_par = JSON.stringify(req.params);
+
+    var send_method = send_body['method'];
+    var send_data = send_body['data'];
 })
 var server = app.listen(3000, function () {
   var host = server.address().address;
