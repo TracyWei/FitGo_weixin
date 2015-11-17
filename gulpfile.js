@@ -22,6 +22,8 @@ var paths = {
 // 3.TASKS
 // - - - - - - - - - - - - - - -
 
+// compile scss file 
+// - - - - - - - - - - - - - - -
 gulp.task('sass',function(done){
     gulp.src('./scss/herald.app.scss')
         .pipe(sass())
@@ -34,10 +36,15 @@ gulp.task('sass',function(done){
         .on('end',done);
 });
 
+// before start server,compile scss file
+// - - - - - - - - - - - - - - -
 
 gulp.task('build',function(done){
     sequence('sass',done);
 })
+
+// start the server
+// - - - - - - - - - - - - - - -
 
 gulp.task('server',['build'],function(){
     gulp.src('./')
@@ -49,6 +56,10 @@ gulp.task('server',['build'],function(){
             open: true
         }));
 });
+
+
+// watch file's change and reload server
+// - - - - - - - - - - - - - - -
 
 gulp.task('default',['server'],function(){
     gulp.watch(paths.sass, ['sass']);

@@ -1,11 +1,13 @@
-angular.module('HeraldApp', ['ionic'])
+angular.module('HeraldApp', ['ionic','HeraldApp.config'])
+
 .config(function($stateProvider, $urlRouterProvider) {
     $stateProvider
+    //index
     .state(
         "index",{
             url:"/herald",
             abstract:true,
-            templateUrl:"pages/menu.html"
+            templateUrl:"pages/index/menu.html"
         })
     .state(
         "index.home",
@@ -13,8 +15,8 @@ angular.module('HeraldApp', ['ionic'])
             url:"/home",
             views:{
                 "home":{
-                    templateUrl:"pages/home.html",
-                    controller:"MyCtrl"
+                    templateUrl:"pages/index/home.html",
+                    controller:"HomeCtrl"
                 }
             }
         })
@@ -24,11 +26,41 @@ angular.module('HeraldApp', ['ionic'])
             url:"/state2",
             views:{
                 "home":{
-                    templateUrl:"pages/state2.html",
+                    templateUrl:"pages/index/state2.html",
                     controller:"MyCtrl"
                 }
             }
         })
+    //yuyue
+    .state(
+        "yuyue",{
+            url:"/yuyue",
+            abstract:true,
+            templateUrl:"pages/yuyue/menu.html"
+        })
+    .state(
+        "yuyue.home",
+        {
+            url:"/home",
+            views:{
+                "yuyue-home":{
+                    templateUrl:"pages/yuyue/home.html",
+                    controller:"MyCtrl"
+                }
+            }
+        })
+    .state(
+        "yuyue.My",
+        {
+            url:"/my",
+            views:{
+                "yuyue-my":{
+                    templateUrl:"pages/yuyue/my.html",
+                    controller:"MyCtrl"
+                }
+            }
+        })
+
     .state(
         "testpage",{
             url:"/testpage",
