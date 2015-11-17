@@ -10,4 +10,23 @@ angular.module('HeraldApp')
             {'slideimg':"./img/index/slide1.jpg"}
         ];
     // $scope.testurl = "./img/index/slide1.jpg";
-}]);
+}])
+
+.controller('YuyueCtrl', ['$scope','callApi', function($scope,callApi){
+    $scope.namedata=callApi.namedata;
+    $scope.testApi = function(){
+        callApi.getData()
+            .then(function(data){
+                // alert(data);
+            }, function(data){
+                // alert('ok+'+data);
+            })
+    };
+}])
+
+
+
+
+
+
+;

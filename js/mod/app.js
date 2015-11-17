@@ -1,6 +1,8 @@
-angular.module('HeraldApp', ['ionic','HeraldApp.config'])
+angular.module('HeraldApp', ['ionic','HeraldApp.config','HeraldApp.services'])
 
-.config(function($stateProvider, $urlRouterProvider) {
+.config(function($stateProvider, $urlRouterProvider,$ionicConfigProvider) {
+    // $ionicConfigProvider.tabs.position('bottom');
+
     $stateProvider
     //index
     .state(
@@ -56,7 +58,7 @@ angular.module('HeraldApp', ['ionic','HeraldApp.config'])
             views:{
                 "yuyue-my":{
                     templateUrl:"pages/yuyue/my.html",
-                    controller:"MyCtrl"
+                    controller:"YuyueCtrl"
                 }
             }
         })
