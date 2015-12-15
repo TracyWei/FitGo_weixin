@@ -1,4 +1,4 @@
-angular.module('HeraldApp.config',[])
+angular.module('FitGoApp.config',[])
 .constant("ENV",{
     "name":"production",
     "debug":true,

@@ -1,4 +1,4 @@
-angular.module('HeraldApp')
+angular.module('FitGoApp')
 .directive('helloWorld', function(){
     // Runs during compile
     return {

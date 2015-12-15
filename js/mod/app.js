@@ -1,4 +1,4 @@
-angular.module('HeraldApp', ['ionic','HeraldApp.config','HeraldApp.services'])
+angular.module('FitGoApp', ['ionic','FitGoApp.config','FitGoApp.services'])
 
 .config(function($stateProvider, $urlRouterProvider,$ionicConfigProvider) {
     // $ionicConfigProvider.tabs.position('bottom');
@@ -7,7 +7,7 @@ angular.module('HeraldApp', ['ionic','HeraldApp.config','HeraldApp.services'])
     //index
     .state(
         "index",{
-            url:"/herald",
+            url:"/fitgo",
             abstract:true,
             templateUrl:"pages/index/menu.html"
         })
@@ -32,6 +32,15 @@ angular.module('HeraldApp', ['ionic','HeraldApp.config','HeraldApp.services'])
                     controller:"MyCtrl"
                 }
             }
+        })
+    //login
+    .state(
+        "login",{
+            url:"/login",
+           
+            templateUrl:"pages/login/login.html",
+            controller:"MyCtrl"
+                            
         })
     //yuyue
     .state(
@@ -69,7 +78,7 @@ angular.module('HeraldApp', ['ionic','HeraldApp.config','HeraldApp.services'])
             templateUrl:"testpage.html",
             controller:"pagetestCtrl"
         });
-    $urlRouterProvider.otherwise('/herald/home');
+    $urlRouterProvider.otherwise('/fitgo/home');
 })
 .controller('MyCtrl', function($scope,$state) {
     $scope.title="首页";

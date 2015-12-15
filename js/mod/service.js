@@ -1,4 +1,4 @@
-angular.module('HeraldApp.services',[])
+angular.module('FitGoApp.services',[])
 // .service('Storage', ['', function(){
 //     "use strict";
 

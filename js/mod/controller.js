@@ -1,4 +1,4 @@
-angular.module('HeraldApp')
+angular.module('FitGoApp')
 .controller('HomeCtrl', ['$scope', '$ionicSlideBoxDelegate','$sce',function($scope,$ionicSlideBoxDelegate,$sce){
     $scope.slideHasChanged = function($index){
         

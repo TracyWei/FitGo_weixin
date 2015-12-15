@@ -49,7 +49,7 @@ gulp.task('build',function(done){
 gulp.task('server',['build'],function(){
     gulp.src('./')
         .pipe($.webserver({
-            port: 3000,
+            port: 8000,
             host: 'localhost',
             fallvack: 'index.html',
             livereload: true,

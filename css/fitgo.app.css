@@ -1,0 +1,136 @@
+@font-face { 
+	font-family :SourceSansPro-Regular ; 
+	src : url('../fonts/SourceSansPro-Regular.ttf') ; 
+	font-family: 
+ }
+ html{
+ 	font-size: 10px;
+ 	font-family: "Microsoft YaHei",Arial,sans-serif,Helvetica;
+ }
+ a{
+	font-weight: 500;
+	text-decoration: none;
+	cursor: pointer;
+}
+.home_slide {
+  height: 200px; 
+}
+.spinner svg {
+  width: 2.8rem;
+  height: 2.8rem;
+  fill: #444; 
+}
+#login_div{
+	height: 100%;
+	background-color: #18CCDE;
+	text-align: center;
+}
+.logo{
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20%;
+	margin-bottom: 0px;
+}
+.login{
+	text-align: right;
+	margin-right: 1rem;
+	padding-top: 1rem;
+
+}
+.login a{
+	color: #fff;
+	font-size: 1.8rem;
+	font-weight: 500;
+}
+.button-full>button.button, button.button-block, button.button-full, input.button.button-block{
+	width: 70%;
+}
+.button{
+	min-height: 2.8rem;
+}
+.z_btn{
+	font-size: 1.8rem;
+	font-weight: 500;
+	margin-right: auto;
+	margin-left: auto;
+	border-radius: 3.2rem;
+	color: #fff;
+}
+.email{
+	background-color: #F7B929;
+	border-color: #F7B929;
+}
+.weixin{
+	background-color: #3A5194;
+	border-color: #3A5194;
+}
+.email.activated{
+	color: #fff;
+	background-color: #D89702;
+	border-color: #D89702;
+}
+.email:hover{
+	color: #fff;
+	background-color: #D89702;
+	border-color: #D89702;
+}
+.weixin.activated{
+	color: #fff;
+	background-color: #314379;
+	border-color: #314379;
+}
+.weixin:hover{
+	color: #fff;
+	background-color: #314379;
+	border-color: #314379;
+}
+.white_p{
+	color: #fff;
+	font-size: 1.6rem;
+	margin-top: 10%;
+}
+.white_p a{
+	color: #fff;
+}
+.left{
+	left: 1.5%;
+}
+.right{
+	right: 1.5%;
+	float: right;
+}
+.bottom_label{
+	position: absolute;
+	bottom: 1.5%;
+	color: #fff;
+	font-weight: 500;
+}
+.bottom_label a{
+	color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
