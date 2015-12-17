@@ -1,4 +1,9 @@
-<ion-view title="登录">
+<ion-view title="返回" hide-nav-bar="true">
+<!-- <ion-nav-buttons side="left">
+  <button class="button">
+    我是一个在导航栏左侧的按钮！
+  </button>
+</ion-nav-buttons> -->
     <!-- <ion-content  direction="y" >
             <div class="home_slide">
             <ion-slide-box does-continue="true" auto-play="true"  slide-interval="3000" on-slide-changed="slideHasChanged($index)" >
@@ -17,14 +22,15 @@
                 </a>
             </div>
     </ion-content> -->
+    <ion-content>
     <div id="login_div">
-        <div class="login"><a href="#">登录</a></div>
+        <div class="login"><a ui-sref="tologin">登录</a></div>
         <img class="logo" src="./img/login/logo.png">
         <button class="button button-block z_btn email">
             邮箱注册
         </button>
         <button class="button button-block z_btn weixin">
-            微信注册aaa
+            微信注册
         </button>
         <p class="white_p"><a href="#">戳我试用一下</a></p>
         <!-- <ion-footer-bar> -->
@@ -32,4 +38,5 @@
             <label class="bottom_label right"><a href="#">团队介绍</a></label>
         <!-- </ion-footer-bar> -->
     </div>
+</ion-content>
 </ion-view>

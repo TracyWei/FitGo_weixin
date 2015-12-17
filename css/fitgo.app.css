@@ -8,7 +8,7 @@
  	font-family: "Microsoft YaHei",Arial,sans-serif,Helvetica;
  }
  a{
-	font-weight: 500;
+	font-weight: 400;
 	text-decoration: none;
 	cursor: pointer;
 }
@@ -20,6 +20,7 @@
   height: 2.8rem;
   fill: #444; 
 }
+/*————————————————欢迎页————————————————*/
 #login_div{
 	height: 100%;
 	background-color: #18CCDE;
@@ -40,8 +41,8 @@
 }
 .login a{
 	color: #fff;
-	font-size: 1.8rem;
-	font-weight: 500;
+	font-size: 1.6rem;
+	font-weight: 400;
 }
 .button-full>button.button, button.button-block, button.button-full, input.button.button-block{
 	width: 70%;
@@ -50,8 +51,8 @@
 	min-height: 2.8rem;
 }
 .z_btn{
-	font-size: 1.8rem;
-	font-weight: 500;
+	font-size: 1.6rem;
+	font-weight: 400;
 	margin-right: auto;
 	margin-left: auto;
 	border-radius: 3.2rem;
@@ -104,14 +105,38 @@
 	position: absolute;
 	bottom: 1.5%;
 	color: #fff;
-	font-weight: 500;
+	font-weight: 400;
 }
 .bottom_label a{
 	color: #fff;
 }
-
-
-
+/*————————————————登录————————————————*/
+.bar.bar-positive{
+	border:0px;
+    background-color: #18CCDE;
+    /*background-image: linear-gradient(0deg,#0c63ee,#0c63ee 50%,transparent 50%);*/
+    color: #fff;
+}
+#login_id{
+	background-color: #18CCDE;
+}
+.mylist span{
+	font-size: 1.4rem;
+}
+.mylist input{
+	color: #F7B929;
+	height: 5.5rem;
+}
+.login_btns{
+	margin-top: 2rem;
+	text-align: center;
+}
+.login_btns p{
+	padding-top: 0.5rem;
+}
+.login_btns a{
+	color: #fff;
+}
 
 
 

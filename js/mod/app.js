@@ -37,10 +37,16 @@ angular.module('FitGoApp', ['ionic','FitGoApp.config','FitGoApp.services'])
     .state(
         "login",{
             url:"/login",
-           
+            
             templateUrl:"pages/login/login.html",
             controller:"MyCtrl"
                             
+        })
+    .state(
+        "tologin",{
+            url:"/tologin",
+            templateUrl:"pages/login/tologin.html",
+            controller:"MyCtrl"
         })
     //yuyue
     .state(
