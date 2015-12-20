@@ -1,4 +1,4 @@
-<ion-view title="手机注册" id="verify_id">
+<ion-view title="手机注册" id="e-signup_id">
 <ion-content class="has-header">
 <div class="list mylist">
 	<label class="item item-input">
@@ -8,7 +8,7 @@
 	<label class="item item-input">
 		<span class="input-label">手机号码</span>
 		<input type="text" placeholder="请输入手机号码">
-		<div class="get-code" ng-click="getcode()"><p>获取验证码</p></div>
+		<div class="get-code"  ><p ng-click="getcode()">获取验证码</p></div>
 	</label>
 	<label class="item item-input">
 		<span class="input-label">验证码</span>
@@ -19,9 +19,10 @@
 		<input type="password" placeholder="请输入至少六位的密码">
 	</label>
 	<div class="login_btns">
-		<button class="button button-block z_btn email">
-		手机注册
+		<button class="button button-block z_btn email" ui-sref="personal-info">
+		手机注册{{test}}
 		</button>
+		<!-- <p ng-repeat="test1 in tests">{{test1}}</p> -->
 <!-- 		<p><a href="#">忘记密码</a></p> -->
 	</div>
 </div>

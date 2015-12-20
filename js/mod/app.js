@@ -70,6 +70,13 @@ angular.module('FitGoApp', ['ionic','FitGoApp.config','FitGoApp.services'])
             templateUrl:"pages/login/w-signup.html",
             controller:"MyCtrl"
         })
+    //完善个人信息
+    .state(
+        "personal-info",{
+            url:"/welcome/personal-info",
+            templateUrl:"pages/login/personal-info.html",
+            controller:"LoginCtrl"
+        })
     //——————————个人中心——————————
     //修改密码
     .state(
@@ -79,12 +86,12 @@ angular.module('FitGoApp', ['ionic','FitGoApp.config','FitGoApp.services'])
             templateUrl:"pages/user/user_index.html",
         })
     .state(
-        "user.change_password",
+        "user.change-password",
         {
-            url:"/change_password",
+            url:"/change-password",
             views:{
                 "user-change_passowrd":{
-                    templateUrl:"pages/user/change_password.html",
+                    templateUrl:"pages/user/change-password.html",
                     controller:"LoginCtrl"
                 }
             }

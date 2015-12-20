@@ -160,6 +160,9 @@ input:-moz-placeholder {
 	background-color: #54D3F2;
 }
 /*————————————————手机注册————————————————*/
+#e-signup_id{
+	background-color: #54D3F2;
+}
 .get-code{
 	position: absolute;
 	/*float: right;*/
@@ -180,8 +183,14 @@ input:-moz-placeholder {
 	color: #fff;
 	font-size: 1.2rem;
 }
-
-
+/*————————————————完善个人信息————————————————*/
+#personal-info_id{
+	background-color: #54D3F2;
+}
+/*————————————————修改密码————————————————*/
+#change-password_id{
+	background-color: #54D3F2;
+}
 
 
 
