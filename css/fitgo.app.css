@@ -23,7 +23,10 @@
 /*————————————————欢迎页————————————————*/
 #login_div{
 	height: 100%;
-	background-color: #18CCDE;
+	/*background-color: #251C43;*/
+	/*background-color: rgb(35,31,69);*/
+	/*background-color: rgb(131, 225, 218);*/
+	background-color: #54D3F2;
 	text-align: center;
 }
 .logo{
@@ -38,11 +41,12 @@
 	margin-right: 1rem;
 	padding-top: 1rem;
 
+
 }
-.login a{
+.login span{
 	color: #fff;
 	font-size: 1.6rem;
-	font-weight: 400;
+	font-weight: 500;
 }
 .button-full>button.button, button.button-block, button.button-full, input.button.button-block{
 	width: 70%;
@@ -52,7 +56,7 @@
 }
 .z_btn{
 	font-size: 1.6rem;
-	font-weight: 400;
+	font-weight: 500;
 	margin-right: auto;
 	margin-left: auto;
 	border-radius: 3.2rem;
@@ -61,10 +65,14 @@
 .email{
 	background-color: #F7B929;
 	border-color: #F7B929;
+/*	background-color: #FFC900;
+	border-color: #FFC900;*/
 }
 .weixin{
-	background-color: #3A5194;
-	border-color: #3A5194;
+	/*background-color: #3A5194;
+	border-color: #3A5194;*/
+	background-color: #434CA6;
+	border-color: #434CA6;
 }
 .email.activated{
 	color: #fff;
@@ -78,8 +86,8 @@
 }
 .weixin.activated{
 	color: #fff;
-	background-color: #314379;
-	border-color: #314379;
+	background-color: #3F4792;
+	border-color: #3F4792;
 }
 .weixin:hover{
 	color: #fff;
@@ -93,6 +101,7 @@
 }
 .white_p a{
 	color: #fff;
+	font-weight: 500;
 }
 .left{
 	left: 1.5%;
@@ -113,19 +122,20 @@
 /*————————————————登录————————————————*/
 .bar.bar-positive{
 	border:0px;
-    background-color: #18CCDE;
+    background-color: #54D3F2;
     /*background-image: linear-gradient(0deg,#0c63ee,#0c63ee 50%,transparent 50%);*/
     color: #fff;
 }
-#login_id{
-	background-color: #18CCDE;
+#tologin_id{
+	background-color: #54D3F2;
 }
 .mylist span{
-	font-size: 1.4rem;
+	font-size: 1.6rem;
 }
 .mylist input{
-	color: #F7B929;
+	color: #EEA702;
 	height: 5.5rem;
+	font-size: 1.6rem;
 }
 .login_btns{
 	margin-top: 2rem;
@@ -136,6 +146,10 @@
 }
 .login_btns a{
 	color: #fff;
+}
+/*————————————————验证————————————————*/
+#verify_id{
+	background-color: #54D3F2;
 }
 
 

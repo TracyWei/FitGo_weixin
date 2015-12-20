@@ -1,4 +1,4 @@
-<ion-view title="返回" hide-nav-bar="true">
+<ion-view title="欢迎页" hide-nav-bar="true">
 <!-- <ion-nav-buttons side="left">
   <button class="button">
     我是一个在导航栏左侧的按钮！
@@ -24,12 +24,12 @@
     </ion-content> -->
     <ion-content>
     <div id="login_div">
-        <div class="login"><a ui-sref="tologin">登录</a></div>
+        <div ui-sref="tologin" class="login"><span>登录</span></div>
         <img class="logo" src="./img/login/logo.png">
-        <button class="button button-block z_btn email">
+        <button class="button button-block z_btn email" ui-sref="verify">
             邮箱注册
         </button>
-        <button class="button button-block z_btn weixin">
+        <button class="button button-block z_btn weixin" ui-sref="verify">
             微信注册
         </button>
         <p class="white_p"><a href="#">戳我试用一下</a></p>

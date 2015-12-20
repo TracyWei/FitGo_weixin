@@ -33,19 +33,40 @@ angular.module('FitGoApp', ['ionic','FitGoApp.config','FitGoApp.services'])
                 }
             }
         })
-    //login
+    //欢迎页
     .state(
-        "login",{
-            url:"/login",
-            
-            templateUrl:"pages/login/login.html",
+        "welcome",{
+            url:"/welcome",
+            templateUrl:"pages/login/welcome.html",
             controller:"MyCtrl"
                             
         })
+    //邮箱登陆
     .state(
         "tologin",{
-            url:"/tologin",
+            url:"/welcome/tologin",
             templateUrl:"pages/login/tologin.html",
+            controller:"MyCtrl"
+        })
+    //验证
+    .state(
+        "verify",{
+            url:"welcome/verify",
+            templateUrl:"pages/login/verify.html",
+            controller:"MyCtrl"
+        })
+    //邮箱注册
+    .state(
+        "e-signup",{
+            url:"/welcome/e-signup",
+            templateUrl:"pages/login/e-signup.html",
+            controller:"MyCtrl"
+        })
+    //微信注册
+     .state(
+        "w-signup",{
+            url:"/welcome/w-signup",
+            templateUrl:"pages/login/w-signup.html",
             controller:"MyCtrl"
         })
     //yuyue
