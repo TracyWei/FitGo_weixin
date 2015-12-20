@@ -33,6 +33,7 @@ angular.module('FitGoApp', ['ionic','FitGoApp.config','FitGoApp.services'])
                 }
             }
         })
+    //——————————login——————————
     //欢迎页
     .state(
         "welcome",{
@@ -41,7 +42,7 @@ angular.module('FitGoApp', ['ionic','FitGoApp.config','FitGoApp.services'])
             controller:"MyCtrl"
                             
         })
-    //邮箱登陆
+    //手机登陆
     .state(
         "tologin",{
             url:"/welcome/tologin",
@@ -55,12 +56,12 @@ angular.module('FitGoApp', ['ionic','FitGoApp.config','FitGoApp.services'])
             templateUrl:"pages/login/verify.html",
             controller:"MyCtrl"
         })
-    //邮箱注册
+    //手机注册
     .state(
         "e-signup",{
             url:"/welcome/e-signup",
             templateUrl:"pages/login/e-signup.html",
-            controller:"MyCtrl"
+            controller:"LoginCtrl"
         })
     //微信注册
      .state(
@@ -68,6 +69,25 @@ angular.module('FitGoApp', ['ionic','FitGoApp.config','FitGoApp.services'])
             url:"/welcome/w-signup",
             templateUrl:"pages/login/w-signup.html",
             controller:"MyCtrl"
+        })
+    //——————————个人中心——————————
+    //修改密码
+    .state(
+        "user",{
+            url:"/user",
+            abstract:true,
+            templateUrl:"pages/user/user_index.html",
+        })
+    .state(
+        "user.change_password",
+        {
+            url:"/change_password",
+            views:{
+                "user-change_passowrd":{
+                    templateUrl:"pages/user/change_password.html",
+                    controller:"LoginCtrl"
+                }
+            }
         })
     //yuyue
     .state(

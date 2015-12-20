@@ -11,7 +11,6 @@ angular.module('FitGoApp')
         ];
     // $scope.testurl = "./img/index/slide1.jpg";
 }])
-
 .controller('YuyueCtrl', ['$scope','callApi', function($scope,callApi){
     $scope.namedata=callApi.namedata;
     $scope.testApi = function(){
@@ -23,7 +22,12 @@ angular.module('FitGoApp')
             })
     };
 }])
-
+.controller('LoginCtrl', ['$scope', function($scope){
+    $scope.getcode=function(){
+        console.log("getcode");
+    }
+    $scope.test=2000;
+}])
 
 
 
