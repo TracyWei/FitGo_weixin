@@ -12,6 +12,14 @@
 	text-decoration: none;
 	cursor: pointer;
 }
+input::-webkit-input-placeholder {
+    color:    #bbb;
+    font-size: 1.3rem;
+}
+input:-moz-placeholder {
+    color:    #bbb;
+    font-size: 1.3rem;
+}
 .home_slide {
   height: 200px; 
 }
@@ -150,6 +158,27 @@
 /*————————————————验证————————————————*/
 #verify_id{
 	background-color: #54D3F2;
+}
+/*————————————————手机注册————————————————*/
+.get-code{
+	position: absolute;
+	/*float: right;*/
+	top: 1.5rem;
+	right: 0.5rem;
+	height:3.0rem;
+	width: 10rem;
+	background-color: #3F4792;
+	border-radius: 2rem;
+	border:1px solid #3F4792;
+	box-shadow: 0 0 1px #edeff0;
+	color: #fff;
+	vertical-align: middle;
+	text-align: center;
+	padding-top: 0.6rem;
+}
+.get-code p{
+	color: #fff;
+	font-size: 1.2rem;
 }
 
 
