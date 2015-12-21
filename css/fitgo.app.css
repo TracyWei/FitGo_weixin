@@ -226,6 +226,23 @@ input:-moz-placeholder {
 .item-select{
 	height: 5.5rem;
 }
+.upload-pic{
+	opacity: 0;
+}
+.upload-pic-outside{
+	background-color: #F7B929;
+	height: 7rem;
+	width: 7rem;
+	border-radius: 50%;
+	margin: auto;
+	text-align: center;
+}
+.upload-pic-outside label{
+	color: #fff;
+	font-size: 5.5rem;
+	margin: 0.6rem 0 0 1.3rem;
+	display: inline-block;
+}
 /*————————————————修改密码————————————————*/
 #change-password_id{
 	background-color: #54D3F2;
