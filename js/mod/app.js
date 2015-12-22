@@ -47,7 +47,7 @@ angular.module('FitGoApp', ['ionic','FitGoApp.config','FitGoApp.services'])
         "tologin",{
             url:"/welcome/tologin",
             templateUrl:"pages/login/tologin.html",
-            controller:"MyCtrl"
+            controller:"loginController"
         })
     //验证
     .state(
@@ -61,7 +61,7 @@ angular.module('FitGoApp', ['ionic','FitGoApp.config','FitGoApp.services'])
         "e-signup",{
             url:"/welcome/e-signup",
             templateUrl:"pages/login/e-signup.html",
-            controller:"LoginCtrl"
+            controller:"userController"
         })
     //微信注册
      .state(
@@ -75,7 +75,7 @@ angular.module('FitGoApp', ['ionic','FitGoApp.config','FitGoApp.services'])
         "personal-info",{
             url:"/welcome/personal-info",
             templateUrl:"pages/login/personal-info.html",
-            controller:"LoginCtrl"
+            controller:"userController"
         })
     //——————————个人中心——————————
     //修改密码
@@ -92,7 +92,7 @@ angular.module('FitGoApp', ['ionic','FitGoApp.config','FitGoApp.services'])
             views:{
                 "user-change_passowrd":{
                     templateUrl:"pages/user/change-password.html",
-                    controller:"LoginCtrl"
+                    controller:"userController"
                 }
             }
         })

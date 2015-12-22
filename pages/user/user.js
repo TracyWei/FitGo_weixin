@@ -1,5 +1,5 @@
 angular.module('FitGoApp')
-.controller('LoginCtrl', ['$scope', function($scope) {
+.controller('userController', ['$scope', function($scope) {
         var seconds={
                     'seconds':60,
                     'forbid':false,

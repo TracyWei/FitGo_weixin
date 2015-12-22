@@ -157,6 +157,36 @@ input:-moz-placeholder {
 .login_btns a{
 	color: #fff;
 }
+.no-left-bottom-row{
+	padding-left: 0;
+	padding-bottom: 0;
+}
+.myinput{
+	padding-bottom: 0;
+}
+.myinput span{
+	padding-left: 0;
+}
+.notice{
+	font-size: 1rem !important;
+	padding-bottom: 0;
+	color: #F2444F !important;
+}
+.error_btn{
+	background-color: rgba(248,89,99,1);
+	border-color: rgba(248,89,99,1);
+}
+.error_btn.activated{
+	color: #fff;
+	background-color: rgba(248,89,99,1);
+	border-color: rgba(248,89,99,1);
+}
+.error_btn:hover{
+	color: #fff;
+	background-color: rgba(248,89,99,0.93);
+	border-color: rgba(238,84,94,0.93);
+}
+
 /*————————————————验证————————————————*/
 #verify_id{
 	background-color: #54D3F2;
