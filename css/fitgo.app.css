@@ -198,7 +198,7 @@ input:-moz-placeholder {
 .get-code{
 	position: absolute;
 	/*float: right;*/
-	top: 9.0rem;
+	top: 9.5rem;
 	right: 0.5rem;
 	height:3.2rem;
 	width: 10rem;
@@ -223,7 +223,7 @@ input:-moz-placeholder {
 .get-code-forbid{
 	position: absolute;
 	/*float: right;*/
-	top: 8.5rem;
+	top: 9.5rem;
 	right: 0.5rem;
 	height:3.2rem;
 	width: 10rem;
