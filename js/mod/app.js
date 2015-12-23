@@ -54,7 +54,7 @@ angular.module('FitGoApp', ['ionic','FitGoApp.config','FitGoApp.services'])
         "verify",{
             url:"welcome/verify",
             templateUrl:"pages/login/verify.html",
-            controller:"MyCtrl"
+            controller:"loginController"
         })
     //手机注册
     .state(
@@ -132,7 +132,7 @@ angular.module('FitGoApp', ['ionic','FitGoApp.config','FitGoApp.services'])
             templateUrl:"testpage.html",
             controller:"pagetestCtrl"
         });
-    $urlRouterProvider.otherwise('/fitgo/home');
+    $urlRouterProvider.otherwise('/welcome');
 })
 .controller('MyCtrl', function($scope,$state) {
     $scope.title="首页";
