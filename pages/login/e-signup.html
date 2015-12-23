@@ -1,31 +1,55 @@
 <ion-view title="手机注册" id="e-signup_id">
-	<ion-content class="has-header">
-		<div class="list mylist">
-			<label class="item item-input">
-				<span class="input-label">昵称</span>
-				<input type="text" >
-			</label>
-			<label class="item item-input">
-				<span class="input-label">手机号码</span>
-				<input type="text" >
-			</label>
-			<div ng-show="seconds.codeShow" ng-disabled="seconds.forbid" ng-class="{true:'get-code',false:'get-code-forbid'}[seconds.isForbid]"><p id="seconds"><span>{{seconds.seconds}}</span>s后重新发送</p></div>
-			<div class="get-code" ng-click="getcode()" ng-show="seconds.getShow" ng-disabled="seconds.forbid"><p>获取验证码</p></div>
-			<label class="item item-input">
-				<span class="input-label">验证码</span>
-				<input type="text" >
-			</label>
-			<label class="item item-input">
-				<span class="input-label">密码</span>
-				<input type="password" >
-			</label>
-			<div class="login_btns">
-				<button class="button button-block z_btn email" ui-sref="personal-info">
-				注 册
-				</button>
-				<!-- <p ng-repeat="test1 in tests">{{test1}}</p> -->
-		<!-- 		<p><a href="#">忘记密码</a></p> -->
+<ion-content class="has-header">
+<div class="list mylist">
+	<label class="item item-input">
+		<div class="row no-left-bottom-row">
+			<div class="input-label col-50 myinput">
+				<span class="row">昵称</span>
+				<span ng-show="snotice.n_null" class="row notice">请输入您的昵称</span>
+				<!-- <span ng-show="snotice.sauth" class="row notice"></span> -->
+			</div>
+			<div class="col-50">
+				<input type="text" ng-model="notice.p_number">
 			</div>
 		</div>
-	</ion-content>
+	</label>
+	<label class="item item-input">
+		<div class="row no-left-bottom-row">
+		<div class="input-label col-50 myinput">
+			<span class="row">手机号码</span>
+			<span ng-show="notice.p_null" class="row notice">请输入有效手机号码</span>
+			<span ng-show="notice.auth" class="row notice">验证码错误</span>
+		</div>
+		<div class="col-50">
+			<input type="text" ng-model="notice.p_number">
+		</div>
+		</div>
+	</label>
+	<div ng-show="seconds.codeShow" ng-disabled="seconds.forbid" ng-class="{true:'get-code',false:'get-code-forbid'}[seconds.isForbid]"><p id="seconds"><span>{{seconds.seconds}}</span>s后重新发送</p></div>
+	<div class="get-code" ng-click="getcode()" ng-show="seconds.getShow" ng-disabled="seconds.forbid"><p>获取验证码</p></div>
+	<label class="item item-input">
+		<div class="row no-left-bottom-row">
+		<div class="input-label col-50 myinput">
+			<span class="row">验证码</span>
+			<span ng-show="notice.p_null" class="row notice">请输入有效验证码</span>
+			<span ng-show="notice.auth" class="row notice">验证码错误</span>
+		</div>
+		<div class="col-50">
+			<input type="text" ng-model="notice.p_number">
+		</div>
+		</div>
+	</label>
+	<label class="item item-input">
+		<span class="input-label">密码</span>
+		<input type="password" >
+	</label>
+	<div class="login_btns">
+		<button class="button button-block z_btn email" ui-sref="personal-info">
+		注 册
+		</button>
+		<!-- <p ng-repeat="test1 in tests">{{test1}}</p> -->
+		<!-- 		<p><a href="#">忘记密码</a></p> -->
+	</div>
+</div>
+</ion-content>
 </ion-view>
