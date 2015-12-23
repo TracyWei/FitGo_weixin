@@ -2,14 +2,14 @@ angular.module('FitGoApp')
 	.controller('loginController', ['$scope', '$state', function($scope, $state) {
 		var words = {
 				'login_word': "手机登陆",
-				'verify_word': "验证"
+				'verify_word': "验证",
 			}
 			// ——————————————登录检查——————————————
 		var notice = {
 			'p_null': false,
 			'pwd_null': false,
 			'pwd_6': false,
-			'auth': false,//用户名密码正确性检查
+			'auth': false, //用户名密码正确性检查
 			'p_number': '',
 			'pwd_number': '',
 			'error_class': 1,
@@ -45,7 +45,7 @@ angular.module('FitGoApp')
 		var vnotice = {
 			's_null': false,
 			'c_null': false,
-			'vauth': false,//一卡通学号正确
+			'vauth': false, //一卡通学号正确
 			's_number': '',
 			'c_number': '',
 			'error_class': 1,
@@ -76,6 +76,7 @@ angular.module('FitGoApp')
 					// notice.flag=true;	
 				}
 			}
+			
 	}])
 
 
@@ -87,4 +88,4 @@ angular.module('FitGoApp')
 
 
 
-
+;

@@ -5,11 +5,11 @@
 		<div class="row no-left-bottom-row">
 			<div class="input-label col-50 myinput">
 				<span class="row">昵称</span>
-				<span ng-show="snotice.n_null" class="row notice">请输入您的昵称</span>
+				<span ng-show="snotice.name_null" class="row notice">请输入您的昵称</span>
 				<!-- <span ng-show="snotice.sauth" class="row notice"></span> -->
 			</div>
 			<div class="col-50">
-				<input type="text" ng-model="notice.p_number">
+				<input type="text" ng-model="snotice.uname">
 			</div>
 		</div>
 	</label>
@@ -17,11 +17,12 @@
 		<div class="row no-left-bottom-row">
 		<div class="input-label col-50 myinput">
 			<span class="row">手机号码</span>
-			<span ng-show="notice.p_null" class="row notice">请输入有效手机号码</span>
-			<span ng-show="notice.auth" class="row notice">验证码错误</span>
+			<span ng-show="snotice.p_exist" class="row notice">该手机号已注册</span>
+			<span ng-show="snotice.p_null" class="row notice">请输入有效手机号码</span>
+			<span ng-show="snotice.signauth" class="row notice">验证码错误</span>
 		</div>
 		<div class="col-50">
-			<input type="text" ng-model="notice.p_number">
+			<input type="text" ng-model="snotice.p_number">
 		</div>
 		</div>
 	</label>
@@ -31,21 +32,28 @@
 		<div class="row no-left-bottom-row">
 		<div class="input-label col-50 myinput">
 			<span class="row">验证码</span>
-			<span ng-show="notice.p_null" class="row notice">请输入有效验证码</span>
-			<span ng-show="notice.auth" class="row notice">验证码错误</span>
+			<span ng-show="snotice.code_null" class="row notice">请输入有效验证码</span>
+			<span ng-show="snotice.signauth" class="row notice">验证码错误</span>
 		</div>
 		<div class="col-50">
-			<input type="text" ng-model="notice.p_number">
+			<input type="text" ng-model="snotice.code_number">
 		</div>
 		</div>
 	</label>
 	<label class="item item-input">
-		<span class="input-label">密码</span>
-		<input type="password" >
+		<div class="row no-left-bottom-row">
+		<div class="input-label col-50 myinput">
+			<span class="row">密码</span>
+			<span ng-show="snotice.pwd_null" class="row notice">请输入至少六位密码</span>
+		</div>
+		<div class="col-50">
+			<input type="password" ng-model="snotice.pwd_number">
+		</div>
+		</div>
 	</label>
 	<div class="login_btns">
-		<button class="button button-block z_btn email" ui-sref="personal-info">
-		注 册
+		<button ng-class="{1:'email button button-block z_btn',0:'error_btn button button-block z_btn'}[snotice.error_class]" ng-click="signup()">
+		{{words.signup_word}}
 		</button>
 		<!-- <p ng-repeat="test1 in tests">{{test1}}</p> -->
 		<!-- 		<p><a href="#">忘记密码</a></p> -->
