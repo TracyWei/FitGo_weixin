@@ -2,19 +2,24 @@
     <ion-nav-buttons side="left">
         <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
     </ion-nav-buttons>
+    <ion-nav-buttons side="right">
+  		<button class="button">
+    		<label class="ion-search"></label>
+  		</button>
+	</ion-nav-buttons>
     <ion-content  direction="y" >
     <div class="home_slide">
-            <ion-slide-box does-continue="true" auto-play="true"  slide-interval="3000" on-slide-changed="slideHasChanged($index)" >
+            <ion-slide-box does-continue="true" auto-play="true"  slide-interval="300000" on-slide-changed="slideHasChanged($index)" >
+            <ion-slide class="yue_background">
+                    <div class="yue_button">
+                    	<p>约上小伙伴一起健身吧ヾ(o◕∀◕)ﾉ</p>
+                    	<button class="button button-block z_btn yue_btn"><p>我 要 约</p></button>
+                    </div>
+                </ion-slide>
                 <ion-slide class="yue_background">
                     <div class="introduce">
                         <p class>FitGo</p>
                         <p>让健身不再孤独</p>
-                    </div>
-                </ion-slide>
-                <ion-slide class="yue_background">
-                    <div class="yue_button">
-                    	<p>约上小伙伴一起健身吧ヾ(o◕∀◕)ﾉ</p>
-                    	<button class="button button-block z_btn yue_btn"><p>我 要 约</p></button>
                     </div>
                 </ion-slide>
                 <ion-slide class="yue_background">
