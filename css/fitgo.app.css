@@ -353,7 +353,7 @@ input:-moz-placeholder {
 	font-size: 28px;
 	height: 28px;
 }
-/*————————————————我要约主页————————————————*/
+/*————————————————我要约————————————————*/
 .yue_background{
 	background-color: #54D3F2;
 }
@@ -415,6 +415,44 @@ input:-moz-placeholder {
 #yue_home .button.button-block, .button.button-full{
 	margin-top: 1.3rem;
 }
+.goals p{
+	font-size: 1.5rem;
+	font-weight: 500;
+}
+#yue_home input[type=text]{
+	margin: auto;
+	width: 90%;
+	background-color: #54D3F2;
+	height: 3.5rem;
+	border-bottom: 1px solid #fff;
+	color: #fff;
+	font-size: 2rem;
+	font-weight: 500;
+	text-align: center;
+}
+.add_btn{
+	background-color: rgba(255,255,255,.2);
+	border-radius: 50%;
+	/*position: absolute;*/
+	height: 6.5rem;
+	width: 6.5rem;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0.5rem;
+	text-align: center;
+	vertical-align: middle;
+}
+.add_btn p:nth-child(1){
+	padding-top: 1.3rem;
+	font-size: 4.2rem;
+	color: #fff;
+}
+.add_btn p:nth-child(2){
+	margin-top: 1.5rem;
+	font-size: 1.5rem;
+	color: #fff;
+}
+
 
 
 

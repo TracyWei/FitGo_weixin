@@ -4,7 +4,7 @@
     </ion-nav-buttons>
     <ion-content  direction="y" >
     <div class="home_slide">
-            <ion-slide-box does-continue="true" auto-play="true"  slide-interval="300000" on-slide-changed="slideHasChanged($index)" >
+            <ion-slide-box does-continue="true" auto-play="true"  slide-interval="3000" on-slide-changed="slideHasChanged($index)" >
                 <ion-slide class="yue_background">
                     <div class="introduce">
                         <p class>FitGo</p>
@@ -19,7 +19,14 @@
                 </ion-slide>
                 <ion-slide class="yue_background">
                     <div class="goals">
-                        
+                        <p>我的目标(｡・`ω´･)</p>
+                        <input type="text" class="goal_input">
+                    </div>
+                </ion-slide>
+                <ion-slide class="yue_background">
+                    <div class="add_btn">
+                       <p class="ion-plus"></p>
+                       <p>添加好友</p>
                     </div>
                 </ion-slide>
             </ion-slide-box>
@@ -33,6 +40,6 @@
 		<!<p ng-repeat="test1 in tests">{{test1}}</p> -->
 		<!-- 		<p><a href="#">忘记密码</a></p> -->
 		</div>
-	</div> -->
+	</div>
     </ion-content>
 </ion-view>
