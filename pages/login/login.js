@@ -36,6 +36,7 @@ angular.module('FitGoApp')
 				if (notice.p_number && notice.pwd_number && !notice.auth && notice.flag6) {
 					notice.error_class = 1;
 					words.login_word = "手机登陆";
+					$state.go('homepage.home')
 				} else {
 					notice.error_class = 0;
 					words.login_word = "出错啦⊙△⊙";

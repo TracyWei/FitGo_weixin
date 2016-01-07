@@ -89,6 +89,7 @@ angular.module('FitGoApp')
                 if (change_notice.p_number && change_notice.pwd1_number && change_notice.pwd2_number && !change_notice.codeauth && change_notice.flag61 && change_notice.flag62 && change_notice.code_number && !change_notice.pwd_notsame) {
                     change_notice.error_class = 1;
                     words.change_word = "修改密码";
+                    $state.go('homepage.home')
                     // notice.flag=false;
                 } else {
                     change_notice.error_class = 0;

@@ -96,36 +96,48 @@ angular.module('FitGoApp', ['ionic','FitGoApp.config','FitGoApp.services'])
                 }
             }
         })
-    //yuyue
+    //——————————首页——————————
+    //首页
     .state(
-        "yuyue",{
-            url:"/yuyue",
+        "homepage",{
+            url:"/homepage",
             abstract:true,
-            templateUrl:"pages/yuyue/menu.html"
+            templateUrl:"pages/homepage/homepage_index.html"
         })
     .state(
-        "yuyue.home",
+        "homepage.home",
         {
             url:"/home",
             views:{
-                "yuyue-home":{
-                    templateUrl:"pages/yuyue/home.html",
+                "homepage-home":{
+                    templateUrl:"pages/homepage/home.html",
+                    controller:"MyCtrl"
+                }
+            }
+        })
+    //历史约
+    .state(
+        "homepage.history_yue",
+        {
+            url:"/history_yue",
+            views:{
+                "homepage-history_yue":{
+                    templateUrl:"pages/homepage/history_yue.html",
                     controller:"MyCtrl"
                 }
             }
         })
     .state(
-        "yuyue.My",
+        "homepage.message",
         {
-            url:"/my",
+            url:"/message",
             views:{
-                "yuyue-my":{
-                    templateUrl:"pages/yuyue/my.html",
-                    controller:"YuyueCtrl"
+                "homepage-message":{
+                    templateUrl:"pages/homepage/message.html",
+                    controller:"MyCtrl"
                 }
             }
         })
-
     .state(
         "testpage",{
             url:"/testpage",
