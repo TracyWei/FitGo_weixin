@@ -1,50 +1,151 @@
 <ion-view id="yue_home" title="主页">
-    <ion-nav-buttons side="left">
-        <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
-    </ion-nav-buttons>
-    <ion-nav-buttons side="right">
-  		<button class="button">
-    		<label class="ion-search"></label>
-  		</button>
-	</ion-nav-buttons>
-    <ion-content  direction="y" >
-    <div class="home_slide">
-            <ion-slide-box does-continue="true" auto-play="true"  slide-interval="300000" on-slide-changed="slideHasChanged($index)" >
-            <ion-slide class="yue_background">
-                    <div class="yue_button">
-                    	<p>约上小伙伴一起健身吧ヾ(o◕∀◕)ﾉ</p>
-                    	<button class="button button-block z_btn yue_btn"><p>我 要 约</p></button>
-                    </div>
-                </ion-slide>
-                <ion-slide class="yue_background">
-                    <div class="introduce">
-                        <p class>FitGo</p>
-                        <p>让健身不再孤独</p>
-                    </div>
-                </ion-slide>
-                <ion-slide class="yue_background">
-                    <div class="goals">
-                        <p>我的目标(｡・`ω´･)</p>
-                        <input type="text" class="goal_input">
-                    </div>
-                </ion-slide>
-                <ion-slide class="yue_background">
-                    <div class="add_btn">
-                       <p class="ion-plus"></p>
-                       <p>添加好友</p>
-                    </div>
-                </ion-slide>
-            </ion-slide-box>
-     </div>
-   <!--  <div class="yue_div">
-    	FitGo,让健身不再孤独~
-    	<div class="login_btns">
-			<button class="email button button-block z_btn" ng-click="yue()">
-				我 要 约
-			</button>
-		<!<p ng-repeat="test1 in tests">{{test1}}</p> -->
-		<!-- 		<p><a href="#">忘记密码</a></p> -->
-		</div>
-	</div>
-    </ion-content>
+<ion-nav-buttons side="left">
+<button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+</ion-nav-buttons>
+<ion-nav-buttons side="right">
+<button class="button search_btn">
+<label class="ion-search btn_font_size"></label>
+</button>
+</ion-nav-buttons>
+<ion-content  direction="y" >
+<div class="home_slide">
+    <ion-slide-box does-continue="true" auto-play="true"  slide-interval="300000" on-slide-changed="slideHasChanged($index)" >
+    <ion-slide class="yue_background">
+    <div class="yue_button">
+        <p>约上小伙伴一起健身吧ヾ(o◕∀◕)ﾉ</p>
+        <button class="button button-block z_btn yue_btn"><p>我 要 约</p></button>
+    </div>
+    </ion-slide>
+    <ion-slide class="yue_background">
+    <div class="introduce">
+        <p class>FitGo</p>
+        <p>让健身不再孤独</p>
+    </div>
+    </ion-slide>
+    <ion-slide class="yue_background">
+    <div class="goals">
+        <p>我的目标(｡・`ω´･)</p>
+        <input type="text" class="goal_input">
+    </div>
+    </ion-slide>
+    <ion-slide class="yue_background">
+    <div class="add_btn">
+        <p class="ion-plus"></p>
+        <p>添加好友</p>
+    </div>
+    </ion-slide>
+    </ion-slide-box>
+    <div class="list choose_yue_items">
+        <p class="list_title">约の详情</p>
+        <label class="item item-input item-select">
+            <div class="input-label col-25">
+                项目
+            </div>
+            <select ng-show="appearance.oitems" id="select0" ng-change="itemChange()" ng-model="selections.selectItems" ng-options="x.id as x.name for x in items">
+                <!-- <option value="">请选择健身项目</option> -->
+            </select>
+        <div class="col-75 input_in_list" ng-show="appearance.mitems">
+            <input type="text" ng-model="selections.myitem">
+        </div>
+        </label>
+        <label class="item item-input item-select">
+            <div class="input-label">
+                地点
+            </div>
+            <select>
+                <option selected>环校</option>
+                <option>桃园篮球场</option>
+                <option>桃园操场</option>
+                <option>桔园篮球场</option>
+                <option>桔园操场</option>
+                <option>梅园操场</option>
+                <option>网球场</option>
+                <option>钢菊</option>
+                <option>自定义</option>
+            </select>
+        </label>
+        <label class="item item-input item-select">
+            <div class="input-label">
+                起始时间
+            </div>
+            <select>
+                <option selected>环校跑</option>
+                <option>羽毛球</option>
+                <option>篮球</option>
+                <option>足球</option>
+                <option>轮滑</option>
+                <option>网球</option>
+                <option>自定义</option>
+            </select>
+        </label>
+        <label class="item item-input item-select">
+            <div class="input-label">
+                结束时间
+            </div>
+            <select>
+                <option selected>环校跑</option>
+                <option>羽毛球</option>
+                <option>篮球</option>
+                <option>足球</option>
+                <option>轮滑</option>
+                <option>网球</option>
+                <option>自定义</option>
+            </select>
+        </label>
+        <label class="item item-input item-select">
+            <div class="input-label">
+                标签
+            </div>
+            <select>
+                <option selected>环校跑</option>
+                <option>羽毛球</option>
+                <option>篮球</option>
+                <option>足球</option>
+                <option>轮滑</option>
+                <option>网球</option>
+                <option>自定义</option>
+            </select>
+        </label>
+        <label class="item item-input item-select">
+            <div class="input-label">
+                性别要求
+            </div>
+            <select>
+                <option selected>环校跑</option>
+                <option>羽毛球</option>
+                <option>篮球</option>
+                <option>足球</option>
+                <option>轮滑</option>
+                <option>网球</option>
+                <option>自定义</option>
+            </select>
+        </label>
+        <label class="item item-input item-select">
+            <div class="input-label">
+                备注
+            </div>
+            <select>
+                <option selected>环校跑</option>
+                <option>羽毛球</option>
+                <option>篮球</option>
+                <option>足球</option>
+                <option>轮滑</option>
+                <option>网球</option>
+                <option>自定义</option>
+            </select>
+        </label>
+    </div>
+</div>
+<!--      </div>
+<div class="yue_div">
+    FitGo,让健身不再孤独~
+    <div class="login_btns">
+        <button class="email button button-block z_btn" ng-click="yue()">
+        我 要 约
+        </button>
+        <!<p ng-repeat="test1 in tests">{{test1}}</p>
+        <!      <p><a href="#">忘记密码</a></p> -->
+    <!--        </div>
+</div> -->
+</ion-content>
 </ion-view>

@@ -22,17 +22,6 @@ angular.module('FitGoApp', ['ionic','FitGoApp.config','FitGoApp.services'])
                 }
             }
         })
-    .state(
-        "index.state2",
-        {
-            url:"/state2",
-            views:{
-                "home":{
-                    templateUrl:"pages/index/state2.html",
-                    controller:"MyCtrl"
-                }
-            }
-        })
     //——————————login——————————
     //欢迎页
     .state(
@@ -111,7 +100,7 @@ angular.module('FitGoApp', ['ionic','FitGoApp.config','FitGoApp.services'])
             views:{
                 "homepage-home":{
                     templateUrl:"pages/homepage/home.html",
-                    controller:"MyCtrl"
+                    controller:"toYueController"
                 }
             }
         })

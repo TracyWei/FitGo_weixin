@@ -376,7 +376,7 @@ input:-moz-placeholder {
 	height: 65%;
 }
 .slider-pager{
-	height: 75px;
+	height: 2px;
 }
 .slider-pager .slider-pager-page{
 	color: #fff;
@@ -419,7 +419,7 @@ input:-moz-placeholder {
 	font-size: 1.5rem;
 	font-weight: 500;
 }
-#yue_home input[type=text]{
+.goals input[type=text]{
 	margin: auto;
 	width: 90%;
 	background-color: #54D3F2;
@@ -452,10 +452,43 @@ input:-moz-placeholder {
 	font-size: 1.5rem;
 	color: #fff;
 }
-
-
-
-
+.bar-positive .search_btn{
+	background-color: #54D3F2;
+	border:none;
+	color: #fff;
+	font-size: 1.2rem;
+}
+.bar-positive .search_btn.activated{
+	background-color: #54D3F2;
+	border-color:none;
+	box-shadow: none;
+	color: #ddd;
+}
+.btn_font_size{
+	font-size: 2.0rem;
+	font-weight: 200;
+}
+.list_title{
+	text-align: left;
+	font-size: 1.4rem;
+	background-color: #F4F4F4;
+	padding: 17px 10px 5px 15px;
+	font-weight: 300;
+	margin-bottom: 0px;
+}
+.list{
+	padding-top: 0px;
+}
+.input-label{
+	font-weight: 500;
+	font-size: 1.4rem;
+}
+.input_in_list input[type=text]{
+	background-color: #fff;
+	color: #EEA702;
+	text-align: right;
+	/*border-bottom: 1px solid #ddd;*/
+}
 
 
 
