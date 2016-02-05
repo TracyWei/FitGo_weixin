@@ -489,54 +489,10 @@ input:-moz-placeholder {
 	text-align: right;
 	/*border-bottom: 1px solid #ddd;*/
 }
-.timePicker input[type=datetime-local]{
-	color: #EEA702;
-	text-align: right;
-}
-.down_icon{
-	text-align: right;
-	color: #EEA702;
-	padding-right: 20px;
-}
-.mycard{
-	box-shadow: 0 2px 3px #ddd;
-	background-color: #fff;
-	text-align: center;
-	padding: 5px;
-	font-size: 0.8rem;
-	font-family: "Microsoft YaHei";
-	font-weight: 300;
-	margin: 5px;
-	color: #EEA702;
-	display: inline-block;
-}
-.mycard:nth-child(2n){
-	color: #666;
-}
-.myItem{
-	width: 100%;
-	min-height: 80px;
-	text-align: left;
-	vertical-align: middle;
-	margin: 10px 10px;
-}
-.item.activated{
-	background-color: #f7f7f7;
-	border-color: #f7f7f7;
-}
-.mytextarea{
-	color: #EEA702;
-	display: inline;
-}
-.mytextarea textarea{
-	width: 95%;
-	min-height: 80px;
-	color: #EEA702;
-}
-.littlemark{
-	color: #54D3F2;
-	font-size: 0.5rem;
-}
+
+
+
+
 
 
 

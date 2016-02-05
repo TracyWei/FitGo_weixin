@@ -43,43 +43,53 @@
             </div>
             <select ng-show="appearance.oitems" ng-change="itemChange()" ng-model="selections.selectItems" ng-options="x.id as x.name for x in items">
             </select>
-            <div class="col-75 input_in_list" ng-show="appearance.mitems">
-                <input type="text" ng-model="selections.myitem">
-            </div>
+        <div class="col-75 input_in_list" ng-show="appearance.mitems">
+            <input type="text" ng-model="selections.myitem">
+        </div>
         </label>
         <label class="item item-input item-select">
             <div class="input-label col-25">
                 地点
             </div>
             <select ng-show="appearance.olocations" ng-change="locationChange()" ng-model="selections.selectLocations"
-                ng-options="x.id as x.name for x in locations">
+            ng-options="x.id as x.name for x in locations">
             </select>
-            <div class="col-75 input_in_list" ng-show="appearance.mlocations">
-                <input type="text" ng-model="selections.mylocation">
-            </div>
+        <div class="col-75 input_in_list" ng-show="appearance.mlocations">
+            <input type="text" ng-model="selections.mylocation">
+        </div>
         </label>
         <label class="item item-input item-select">
-            <div class="input-label col-25">
+            <div class="input-label">
                 起始时间
             </div>
-            <div class="timePicker col-75">
-                <input type="datetime-local" value="2016-02-26T10:00" >
-            </div>
+            <select>
+                <option selected>环校跑</option>
+                <option>羽毛球</option>
+                <option>篮球</option>
+                <option>足球</option>
+                <option>轮滑</option>
+                <option>网球</option>
+                <option>自定义</option>
+            </select>
         </label>
         <label class="item item-input item-select">
-            <div class="input-label col-25">
+            <div class="input-label">
                 结束时间
             </div>
-            <div class="timePicker col-75">
-                <input type="datetime-local" value="2016-02-26T20:00" >
-            </div>
+            <select>
+                <option selected>环校跑</option>
+                <option>羽毛球</option>
+                <option>篮球</option>
+                <option>足球</option>
+                <option>轮滑</option>
+                <option>网球</option>
+                <option>自定义</option>
+            </select>
         </label>
-        <label class="item item-input item-select" ng-click="showLabel()">
-            <div class="input-label col-25">
+        <label class="item item-input item-select">
+            <div class="input-label">
                 标签
             </div>
-            <span class="ion-chevron-down down_icon col-75" ></span>
-        </label>
         <div class="myItem" ng-show="appearance.labelS">
             <div class="mycard" ng-repeat="label in myLabels">
                 <div class="cardContent" ng-click="labelClick()">
@@ -93,19 +103,29 @@
                 性别要求
             </div>
             <select>
-                <option selected>妹纸</option>
-                <option>汉纸</option>
-                <option>随意_(:з」∠)_</option>
+                <option selected>环校跑</option>
+                <option>羽毛球</option>
+                <option>篮球</option>
+                <option>足球</option>
+                <option>轮滑</option>
+                <option>网球</option>
+                <option>自定义</option>
             </select>
         </label>
-        <div class="myItem row">
-            <div class="input-label col-25">
+        <label class="item item-input item-select">
+            <div class="input-label">
                 备注
             </div>
-            <div class="mytextarea col-75">
-            <textarea col="30" row="5"></textarea>
-            </div>
-        </div>
+            <select>
+                <option selected>环校跑</option>
+                <option>羽毛球</option>
+                <option>篮球</option>
+                <option>足球</option>
+                <option>轮滑</option>
+                <option>网球</option>
+                <option>自定义</option>
+            </select>
+        </label>
     </div>
 </div>
 </ion-content>

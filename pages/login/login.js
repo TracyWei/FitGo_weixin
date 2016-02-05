@@ -25,6 +25,7 @@ angular.module('FitGoApp')
 		$scope.words = words;
 		$scope.plogin = function() {
 				//手机号不为空
+				console.log(notice.p_number);
 				if (!notice.p_number) {
 					notice.p_null = true;
 				} else {
