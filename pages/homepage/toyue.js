@@ -11,10 +11,23 @@ angular.module('FitGoApp')
 			oitems:true,
 			mitems:false,
 			olocations:true,
-			mlocations:false
+			mlocations:false,
+			labelS:false,
 		}
+		//计点击次数
+		var counts={
+			labelCounts:0
+		}
+		//labels
+		var myLabels=[{name:"妹纸妹纸"},
+					{name:"汉纸汉纸"},
+					{name:"狗带狗带"},
+					{name:"当我们被世界抛弃我们还有篮球"},
+					{name:"23333"}]
 		$scope.selections=selections;
 		$scope.appearance=appearance;
+		$scope.counts=counts;
+		$scope.myLabels=myLabels;
 		$scope.items=[{name:"环校跑",id:0},
 					{name:"羽毛球",id:1},
 					{name:"篮球",id:2},
@@ -46,5 +59,14 @@ angular.module('FitGoApp')
 				appearance.mlocations=!appearance.mlocations;
 			}
 		}
+		$scope.showLabel=function(){
+			counts.labelCounts++;
+			console.log(counts.labelCounts);
+			if(counts.labelCounts%1==0){
+				appearance.labelS=!appearance.labelS;
+				console.log(appearance.labelS);
+			}
+		}
+		// $scope.clickTime.mobiscroll(opt);
 		// console.log($scope.tryagain);
 	}]);
