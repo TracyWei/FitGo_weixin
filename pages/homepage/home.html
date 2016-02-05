@@ -41,7 +41,7 @@
             <div class="input-label col-25">
                 项目
             </div>
-            <select ng-show="appearance.oitems" id="select0" ng-change="itemChange()" ng-model="selections.selectItems" ng-options="x.id as x.name for x in items">
+            <select ng-show="appearance.oitems" ng-change="itemChange()" ng-model="selections.selectItems" ng-options="x.id as x.name for x in items">
                 <!-- <option value="">请选择健身项目</option> -->
             </select>
         <div class="col-75 input_in_list" ng-show="appearance.mitems">
@@ -49,20 +49,15 @@
         </div>
         </label>
         <label class="item item-input item-select">
-            <div class="input-label">
+            <div class="input-label col-25">
                 地点
             </div>
-            <select>
-                <option selected>环校</option>
-                <option>桃园篮球场</option>
-                <option>桃园操场</option>
-                <option>桔园篮球场</option>
-                <option>桔园操场</option>
-                <option>梅园操场</option>
-                <option>网球场</option>
-                <option>钢菊</option>
-                <option>自定义</option>
+            <select ng-show="appearance.olocations" ng-change="locationChange()" ng-model="selections.selectLocations"
+            ng-options="x.id as x.name for x in locations">
             </select>
+        <div class="col-75 input_in_list" ng-show="appearance.mlocations">
+            <input type="text" ng-model="selections.mylocation">
+        </div>
         </label>
         <label class="item item-input item-select">
             <div class="input-label">
