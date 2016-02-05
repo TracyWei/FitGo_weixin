@@ -1,5 +1,5 @@
-angular.module('FitGoApp')
-    .controller('userController', ['$scope','$state' ,function($scope,$state) {
+angular.module('FitGoApp',['ngCookies'])
+    .controller('userController', ['$scope','$state','$cookieStore',function($scope,$state,$cookieStore) {
         var seconds = {
             'seconds': 60,
             'forbid': false,

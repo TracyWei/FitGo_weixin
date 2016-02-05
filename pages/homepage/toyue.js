@@ -1,5 +1,5 @@
 angular.module('FitGoApp')
-	.controller('toYueController', ['$scope', '$state', function($scope, $state){
+	.controller('toYueController', ['$scope', '$state', function($scope, $state) {
 		//选项框
 		var selections={
 			selectItems:0,
@@ -67,6 +67,8 @@ angular.module('FitGoApp')
 				console.log(appearance.labelS);
 			}
 		}
-		// $scope.clickTime.mobiscroll(opt);
-		// console.log($scope.tryagain);
+		// $scope.labelClick=function(){
+		// 	$cookieStore.put("labels",label.name);
+		// 	console.log(label.name+"haha");
+		// }
 	}]);
