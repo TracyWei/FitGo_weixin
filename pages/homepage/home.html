@@ -128,12 +128,16 @@
         </div>
     </div>
     <div class="list displayYue">
-        <div class="item item-thumbnail-left" >
+        <div class="row">
+        <div class="item item-thumbnail-left" style="width:85%">
             <img src="../img/homepage/photo.jpg">
             <h2>王小明<span style="color:#EEA702">&nbsp;#瘦二十斤#&nbsp;</span></h2>
             <p><span>项目:</span>羽毛球</p>
             <p><span>时间:</span><span class="timeSpan">02/28 上午10:00-上午12:00</span></p>
             <p><span>地点:</span>钢菊</p>
+        </div>
+        <div style="width:15%"><button class="button button-block z_btn yuebtn" style="margin-top:2.8rem;" ng-click="yue
+            ()">{{words.yuebtn}}</button></div>
         </div>
         <div class="detailDiv">
         <div class="yueDetail" ng-click="getMoreDetail()">
@@ -141,6 +145,7 @@
         </div> 
             <p ng-show="yueItem.yueDetailS" class="detailP">备注:啊哈哈哈啊哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈</p>
         </div>
+        <div class="message" ng-show="yueItem.messageS">消息发送成功~可在"我约的"中查看详情</div>
     </div>
 </div>
 </ion-content>

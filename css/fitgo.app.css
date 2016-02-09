@@ -73,7 +73,10 @@ input:-moz-placeholder {
 	border-radius: 3.2rem;
 	color: #fff;
 }
-.email{
+.yuebtn.button.button-block{
+	margin-top: 1.6rem;
+}
+.email,.yuebtn{
 	background-color: #F7B929;
 	border-color: #F7B929;
 /*	background-color: #FFC900;
@@ -84,14 +87,13 @@ input:-moz-placeholder {
 	border-color: #3A5194;*/
 	background-color: #434CA6;
 	border-color: #434CA6;
-	ß
 }
-.email.activated{
+.yuebtn.activated,.email.activated{
 	color: #fff;
 	background-color: #D89702;
 	border-color: #D89702;
 }
-.email:hover{
+.yuebtn:hover,.email:hover{
 	color: #fff;
 	background-color: #D89702;
 	border-color: #D89702;
@@ -582,15 +584,22 @@ input:-moz-placeholder {
 	/*min-height: 20px;*/
 	vertical-align: middle;
 	padding: 3px 0px;
+	border-bottom-color: #fff;
 }
 .yueDetail.activated{
 	background-color: #fafafa;
 }
 .item{
-	border-bottom-color: #fff;
+	border:none;
+	margin-top: 0px;
 }
 .detailP{
-	margin: 0px 15px;
+	margin: 0px 18px;
 	color: #666;
 	font-size: 1.3rem;
+}
+.message{
+	background-color: #EEFFE9;
+	text-align: center;
+	color: #666;
 }

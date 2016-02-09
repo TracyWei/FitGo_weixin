@@ -5,6 +5,7 @@ angular.module('FitGoApp')
 			selectItems:0,
 			myitem:'',
 			selectLocations:0,
+			mylocation:''
 		}
 		//show&hide
 		var appearance={
@@ -29,11 +30,17 @@ angular.module('FitGoApp')
 					{name:"狗带狗带",id:2,markS:false,count:0},
 					{name:"当我们被世界抛弃我们还有篮球",id:3,markS:false,count:0},
 					{name:"23333",id:4,markS:false,count:0}]
+		//自定义标签
 		var inputLabel={
 			myOwnLabel:''
 		}
+		//主页展示的约
 		var yueItem={
-			yueDetailS:false
+			yueDetailS:false,
+			messageS:false
+		}
+		var words={
+			yuebtn:"约"
 		}
 		$scope.inputLabel=inputLabel;
 		$scope.selections=selections;
@@ -41,6 +48,7 @@ angular.module('FitGoApp')
 		$scope.counts=counts;
 		$scope.myLabels=myLabels;
 		$scope.yueItem=yueItem;
+		$scope.words=words;
 		$scope.items=[{name:"环校跑",id:0},
 					{name:"羽毛球",id:1},
 					{name:"篮球",id:2},
@@ -123,4 +131,12 @@ angular.module('FitGoApp')
 		$scope.getMoreDetail=function(){
 			yueItem.yueDetailS=!yueItem.yueDetailS;
 		}
+		$scope.yue=function(){
+			yueItem.messageS=true;
+			setTimeout(function(){
+				yueItem.messageS=false;
+				console.log(yueItem.messageS);
+			},1000);
+		}
+
 	}]);
