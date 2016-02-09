@@ -32,11 +32,15 @@ angular.module('FitGoApp')
 		var inputLabel={
 			myOwnLabel:''
 		}
+		var yueItem={
+			yueDetailS:false
+		}
 		$scope.inputLabel=inputLabel;
 		$scope.selections=selections;
 		$scope.appearance=appearance;
 		$scope.counts=counts;
 		$scope.myLabels=myLabels;
+		$scope.yueItem=yueItem;
 		$scope.items=[{name:"环校跑",id:0},
 					{name:"羽毛球",id:1},
 					{name:"篮球",id:2},
@@ -115,5 +119,8 @@ angular.module('FitGoApp')
 			last=tempLength;
 			inputLabel.myOwnLabel='';
 			appearance.inputS=false;
+		}
+		$scope.getMoreDetail=function(){
+			yueItem.yueDetailS=!yueItem.yueDetailS;
 		}
 	}]);

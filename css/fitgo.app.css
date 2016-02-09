@@ -556,3 +556,41 @@ input:-moz-placeholder {
 	color: #999;
 	font-size: 1.4rem;
 }
+/*————————————————主页列表————————————————*/
+.displayYue{
+	font-family: "Microsoft YaHei";
+	font-size: 1.2rem;
+}
+.item-thumbnail-left>img:first-child{
+	border-radius: 50%;
+	max-height: 5.5rem;
+	max-width: 5.5rem;
+	margin-left: 5px;
+	margin-top: 12px;
+}
+.item-thumbnail-left, .item-thumbnail-left .item-content{
+	padding-left: 8rem;
+	padding-bottom: 0px;
+}
+.detailDiv{
+	border-bottom: 1px solid #f4f4f4;
+}
+.yueDetail{
+	text-align: center;
+	color: #aaa;
+	font-size: 1.6rem;
+	/*min-height: 20px;*/
+	vertical-align: middle;
+	padding: 3px 0px;
+}
+.yueDetail.activated{
+	background-color: #fafafa;
+}
+.item{
+	border-bottom-color: #fff;
+}
+.detailP{
+	margin: 0px 15px;
+	color: #666;
+	font-size: 1.3rem;
+}
