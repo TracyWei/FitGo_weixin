@@ -1,5 +1,5 @@
-angular.module('FitGoApp',['ngCookies'])
-	.controller('toYueController', ['$scope', '$state', '$cookieStore',function($scope, $state,$cookieStore){
+angular.module('FitGoApp')
+	.controller('toYueController', ['$scope', '$state',function($scope, $state){
 		//选项框
 		var selections={
 			selectItems:0,
@@ -13,17 +13,26 @@ angular.module('FitGoApp',['ngCookies'])
 			olocations:true,
 			mlocations:false,
 			labelS:false,
+			markS:false,
+			inputS:false,
+			inputYueDiv:false
 		}
 		//计点击次数
 		var counts={
-			labelCounts:0
+			labelCounts:0,
+			inputCounts:0,
+			yueDivCounts:0
 		}
 		//labels
-		var myLabels=[{name:"妹纸妹纸"},
-					{name:"汉纸汉纸"},
-					{name:"狗带狗带"},
-					{name:"当我们被世界抛弃我们还有篮球"},
-					{name:"23333"}]
+		var myLabels=[{name:"妹纸妹纸",id:0,markS:false,count:0},
+					{name:"汉纸汉纸",id:1,markS:false,count:0},
+					{name:"狗带狗带",id:2,markS:false,count:0},
+					{name:"当我们被世界抛弃我们还有篮球",id:3,markS:false,count:0},
+					{name:"23333",id:4,markS:false,count:0}]
+		var inputLabel={
+			myOwnLabel:''
+		}
+		$scope.inputLabel=inputLabel;
 		$scope.selections=selections;
 		$scope.appearance=appearance;
 		$scope.counts=counts;
@@ -45,15 +54,17 @@ angular.module('FitGoApp',['ngCookies'])
 						{name:"网球场",id:6},
 						{name:"钢菊",id:7},
 						{name:"自定义",id:8}]
+		$scope.wangToYue=function(){
+			counts.yueDivCounts++;
+			appearance.inputYueDiv=!appearance.inputYueDiv;
+		}
 		$scope.itemChange=function(){
-			console.log(selections.selectItems);
 			if(selections.selectItems==7){
 				appearance.oitems=!appearance.oitems;
 				appearance.mitems=!appearance.mitems;
 			}
 		}
 		$scope.locationChange=function(){
-			console.log(selections.selectLocations);
 			if(selections.selectLocations==8){
 				appearance.olocations=!appearance.olocations;
 				appearance.mlocations=!appearance.mlocations;
@@ -61,14 +72,48 @@ angular.module('FitGoApp',['ngCookies'])
 		}
 		$scope.showLabel=function(){
 			counts.labelCounts++;
-			console.log(counts.labelCounts);
-			if(counts.labelCounts%1==0){
-				appearance.labelS=!appearance.labelS;
-				console.log(appearance.labelS);
-			}
+			appearance.labelS=!appearance.labelS;
 		}
-		// $scope.labelClick=function(){
-		// 	$cookieStore.put("labels",label.name);
-		// 	console.log(label.name+"haha");
-		// }
+		var last=-1;
+		$scope.clickItem=function(id,markS,name,count){
+			myLabels[id].count++;
+			if(myLabels[id].count%2==1){
+				myLabels[id].markS=true;
+				if(window.localStorage.getItem('choosenItem')!=''){
+					console.log(last);
+					if(last>=0){
+						myLabels[last].markS=false;
+					}
+					window.localStorage.removeItem('choosenItem');
+					console.log(name+'1');
+				}
+				console.log(name+'2');
+				window.localStorage.setItem('choosenItem',name);
+			}
+			else if(myLabels[id].count%2==0){
+				window.localStorage.removeItem('choosenItem');
+				myLabels[id].markS=false;
+				console.log(name);
+			}
+			last=id;
+		}
+		$scope.addLabel=function(){
+			counts.inputCounts++;
+			appearance.inputS=!appearance.inputS;
+		}
+		$scope.toAddLabel=function(){
+			if(last>=0){
+				window.localStorage.removeItem('choosenItem');
+				myLabels[last].markS=false;
+			}
+			var tempLength=myLabels.length;
+			console.log(tempLength);
+			console.log(inputLabel.myOwnLabel);
+			myLabels.push({name:inputLabel.myOwnLabel,id:tempLength,markS:true,count:0});
+			window.localStorage.setItem('choosenItem',inputLabel.myOwnLabel);
+			console.log(myLabels.length);
+			last=tempLength;
+			inputLabel.myOwnLabel='';
+			appearance.inputS=false;
+		}
 	}]);

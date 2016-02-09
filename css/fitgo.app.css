@@ -84,6 +84,7 @@ input:-moz-placeholder {
 	border-color: #3A5194;*/
 	background-color: #434CA6;
 	border-color: #434CA6;
+	ß
 }
 .email.activated{
 	color: #fff;
@@ -489,43 +490,69 @@ input:-moz-placeholder {
 	text-align: right;
 	/*border-bottom: 1px solid #ddd;*/
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.timePicker input[type=datetime-local]{
+	color: #EEA702;
+	text-align: right;
+}
+.down_icon{
+	text-align: right;
+	color: #EEA702;
+	padding-right: 20px;
+}
+.mycard{
+	box-shadow: 0 2px 3px #ddd;
+	background-color: #fff;
+	text-align: center;
+	padding: 5px;
+	font-family: "Microsoft YaHei";
+	font-weight: 400;
+	font-size: 1.6rem;
+	margin: 5px;
+	color: #EEA702;
+	display: inline-block;
+}
+.mycard:nth-child(2n){
+	color: #444;
+}
+.myItem{
+	width: 100%;
+	min-height: 80px;
+	text-align: left;
+	vertical-align: middle;
+	margin: 10px 10px;
+}
+.item.activated{
+	background-color: #f7f7f7;
+	border-color: #f7f7f7;
+}
+.mytextarea{
+	color: #EEA702;
+	display: inline;
+}
+.mytextarea textarea{
+	width: 95%;
+	min-height: 80px;
+	color: #EEA702;
+	text-align: right;
+}
+.littlemark{
+	color: #54D3F2;
+	font-size: 1.4rem;
+}
+.plusDiv{
+	height: 18px;
+	width: 38px;
+	color: #888;
+	padding-top: 3px;
+	font-size: 1.2rem;
+}
+.addLabelBtn{
+	text-align: right;
+	padding-right: 4.3rem;
+	color: #999;
+	font-size: 1.4rem;
+}
+.addLabelBtn span{
+	color: #999;
+	font-size: 1.4rem;
+}

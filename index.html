@@ -4,9 +4,11 @@
             <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
             <title>FitGo</title>
             
+            
             <link href="./css/ionic.min.css" rel="stylesheet">
             <link href="./css/fitgo.app.css" rel="stylesheet">
             <script src="./js/ionic.bundle.min.js"></script>
+            <script src="./js/angular-cookies.js"></script>
             <script src="./js/mod/app.js"></script>
             <script src="./js/mod/controller.js"></script>
             <script src="./js/mod/config.js"></script>
@@ -15,6 +17,7 @@
             <script src="./pages/user/user.js"></script>
             <script src="./pages/login/login.js"></script>
             <script src="./pages/homepage/toyue.js"></script>
+
         </head>
         <body ng-controller="MyCtrl">
 <!-- 
@@ -33,7 +36,6 @@
                 <p>{{data}}</p>
                 <div ng-include="'test.htnl'"></div>
                 </div>
-
             </ion-content> -->
             <ion-nav-bar class="bar-positive">
                   <ion-nav-back-button>

@@ -1,11 +1,5 @@
 angular.module('FitGoApp')
 	.controller('loginController', ['$scope', '$state', function($scope, $state) {
-		// console.log("hello");
-		// $scope.lalala=111;
-		// $scope.la=function(){
-		// 	console.log("hahaha");
-		// 	console.log($scope.lalala);
-		// }
 		var words = {
 				'login_word': "手机登陆",
 				'verify_word': "验证",
