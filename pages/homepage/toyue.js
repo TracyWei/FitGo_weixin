@@ -133,9 +133,10 @@ angular.module('FitGoApp')
 		}
 		$scope.yue=function(){
 			yueItem.messageS=true;
+			console.log(yueItem.messageS+"out")
 			setTimeout(function(){
 				yueItem.messageS=false;
-				console.log(yueItem.messageS);
+				console.log(yueItem.messageS+"in");
 			},1000);
 		}
 

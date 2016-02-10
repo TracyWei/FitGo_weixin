@@ -20,6 +20,9 @@ input:-moz-placeholder {
     color:    #bbb;
     font-size: 1.3rem;
 }
+p{ word-wrap:break-word; 
+	word-break:normal; 
+}
 .home_slide {
   height: 200px; 
 }
@@ -374,6 +377,7 @@ input:-moz-placeholder {
 .introduce p:nth-child(2){
 	margin-top: 1.5rem;
 	font-size: 2rem;
+	font-family: "Microsoft YaHei"
 }
 .slider-slide{
 	height: 65%;
@@ -386,7 +390,8 @@ input:-moz-placeholder {
 }
 .yue_button p{
 	margin-top: 1.5rem;
-	font-size: 1.5rem;
+	font-size: 1.6rem;
+	font-family: "Microsoft YaHei"
 }
 .yue_btn{
 	background-color: #fff;
@@ -419,8 +424,8 @@ input:-moz-placeholder {
 	margin-top: 1.3rem;
 }
 .goals p{
-	font-size: 1.5rem;
-	font-weight: 500;
+	font-size: 1.6rem;
+	font-family: "Microsoft YaHei"	
 }
 .goals input[type=text]{
 	margin: auto;
@@ -441,7 +446,6 @@ input:-moz-placeholder {
 	width: 6.5rem;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 0.5rem;
 	text-align: center;
 	vertical-align: middle;
 }
@@ -451,9 +455,10 @@ input:-moz-placeholder {
 	color: #fff;
 }
 .add_btn p:nth-child(2){
-	margin-top: 1.5rem;
+	margin-top: 2rem;
 	font-size: 1.5rem;
 	color: #fff;
+	font-family: "Microsoft YaHei"
 }
 .bar-positive .search_btn{
 	background-color: #54D3F2;
@@ -593,13 +598,23 @@ input:-moz-placeholder {
 	border:none;
 	margin-top: 0px;
 }
-.detailP{
-	margin: 0px 18px;
-	color: #666;
-	font-size: 1.3rem;
+.item h2{
+	font-size: 1.6rem;
+	color: #000;
+	font-family: "Microsoft YaHei";
+}
+.item p{
+	margin-top: 5px;
+	color: #222;
+}
+.remark{
+	min-height: 20px;
+	overflow: auto!important;
+	white-space: pre-wrap!important;
 }
 .message{
 	background-color: #EEFFE9;
 	text-align: center;
-	color: #666;
+	color: #222;
+	font-size: 1.4rem;
 }
