@@ -13,7 +13,7 @@
 	cursor: pointer;
 }
 input::-webkit-input-placeholder {
-    color:    #bbb;
+    color: #bbb;
     font-size: 1.3rem;
 }
 input:-moz-placeholder {
@@ -29,7 +29,7 @@ p{ word-wrap:break-word;
 .spinner svg {
   width: 2.8rem;
   height: 2.8rem;
-  fill: #444; 
+  color: #444; 
 }
 .bar-positive .button.button-clear{
 	font-size: 1.8rem;
@@ -567,6 +567,7 @@ p{ word-wrap:break-word;
 .displayYue{
 	font-family: "Microsoft YaHei";
 	font-size: 1.2rem;
+	margin-bottom: 0px;
 }
 .item-thumbnail-left>img:first-child{
 	border-radius: 50%;
@@ -579,9 +580,9 @@ p{ word-wrap:break-word;
 	padding-left: 8rem;
 	padding-bottom: 0px;
 }
-.detailDiv{
+/*.detailDiv{
 	border-bottom: 1px solid #f4f4f4;
-}
+}*/
 .yueDetail{
 	text-align: center;
 	color: #aaa;
@@ -618,4 +619,14 @@ p{ word-wrap:break-word;
 	color: #222;
 	font-size: 1.3rem;
 	padding: 3px 0px;
+}
+.span_title,.span_tag{
+	font-size: 1.4rem;
+	font-family: "Microsoft YaHei";
+}
+.span_tag{
+	color: #EEA702;
+}
+.span_time{
+	color: #888;
 }

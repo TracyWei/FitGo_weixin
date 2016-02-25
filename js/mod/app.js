@@ -86,7 +86,7 @@ angular.module('FitGoApp', ['ionic','FitGoApp.config','FitGoApp.services'])
             }
         })
     //——————————首页——————————
-    //首页
+    //主页
     .state(
         "homepage",{
             url:"/homepage",
@@ -104,7 +104,7 @@ angular.module('FitGoApp', ['ionic','FitGoApp.config','FitGoApp.services'])
                 }
             }
         })
-    //历史约
+    //约我的
     .state(
         "homepage.history_yue",
         {
@@ -112,10 +112,11 @@ angular.module('FitGoApp', ['ionic','FitGoApp.config','FitGoApp.services'])
             views:{
                 "homepage-history_yue":{
                     templateUrl:"pages/homepage/history_yue.html",
-                    controller:"MyCtrl"
+                    controller:"thirdTabController"
                 }
             }
         })
+    //我约的
     .state(
         "homepage.message",
         {
@@ -126,6 +127,13 @@ angular.module('FitGoApp', ['ionic','FitGoApp.config','FitGoApp.services'])
                     controller:"MyCtrl"
                 }
             }
+        })
+    //约我的详情
+    .state(
+        "yueDetail",{
+            url:"/history_yue/yueDetail",
+            templateUrl:"pages/homepage/thirdTabDetail.html",
+            controller:"loginController"
         })
     .state(
         "testpage",{

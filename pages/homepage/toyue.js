@@ -1,5 +1,8 @@
 angular.module('FitGoApp')
 	.controller('toYueController', ['$scope', '$state',function($scope, $state){
+		// var arr=[1,2,3];
+		// window.localStorage.setItem('arr',window.JSON.stringify(arr));
+		// console.log(window.JSON.parse(window.localStorage.getItem('arr')));
 		//选项框
 		var selections={
 			selectItems:0,
