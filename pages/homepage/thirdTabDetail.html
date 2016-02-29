@@ -1,11 +1,44 @@
-<ion-view>
+<ion-view >
     <ion-nav-buttons side="left">
-        <button class="button button-icon icon ion-chevron-left" ui-sref="homepage.history_yue"></button>
+        <button class="button button-icon icon ion-ios-arrow-back" ui-sref="homepage.history_yue" 
+        style="font-size:16.2px;">&nbsp;约我的</button>
     </ion-nav-buttons>
     <ion-content  direction="y" >
-<!--     	<div class="bar bar-header bar-calm">
-			<h1 class="title">bar-calm</h1>
-		</div> -->
+    	  <div class="item item-icon-left myItemList" href="#">
+    		<i class="icon ion-ios-body-outline span_color"></i>
+   				 <span>项目名</span>
+   			<span class="item-note" style="font-size:16px;color:#EEA702;">
+     			 {{displayItem.name}}
+    		</span>
+  		</div>
+      <div class="item item-icon-left myItemList" href="#">
+        <i class="icon ion-ios-location-outline span_color"></i>
+           <span>地点</span>
+        <span class="item-note" style="font-size:16px;color:#EEA702;">
+           {{displayItem.location}}
+        </span>
+      </div>
+      <div class="item item-icon-left myItemList" href="#">
+        <i class="ion-ios-timer-outline span_color icon"></i>
+           <span>开始时间</span>
+        <span class="item-note" style="font-size:16px;color:#EEA702;">
+           {{displayItem.startTime}}
+        </span>
+      </div>
+      <div class="item item-icon-left myItemList" href="#">
+        <i class="ion-ios-timer-outline icon span_color "></i>
+           <span>结束时间</span>
+        <span class="item-note" style="font-size:16px;color:#EEA702;">
+           {{displayItem.endTime}}
+        </span>
+      </div>
+      <div class="item item-icon-left myItemList" href="#">
+        <i class="icon ion-ios-paper-outline span_color"></i>
+           <span>备注</span>
+        <span class="item-note" style="font-size:16px;color:#EEA702;">
+           {{displayItem.remark}}
+        </span>
+      </div>  
     </ion-content>
 </ion-view>
 

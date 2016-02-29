@@ -133,7 +133,7 @@ angular.module('FitGoApp', ['ionic','FitGoApp.config','FitGoApp.services'])
         "yueDetail",{
             url:"/history_yue/yueDetail",
             templateUrl:"pages/homepage/thirdTabDetail.html",
-            controller:"loginController"
+            controller:"everyItemController"
         })
     .state(
         "testpage",{
