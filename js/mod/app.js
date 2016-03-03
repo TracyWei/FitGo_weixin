@@ -92,9 +92,7 @@ angular.module('FitGoApp', ['ionic','FitGoApp.config','FitGoApp.services'])
             url:"/homepage",
             abstract:true,
             templateUrl:"pages/homepage/homepage_index.html",
-            controller('name', ['', function(){
-                
-            }])
+            controller:"homeIndexController"
         })
     .state(
         "homepage.home",

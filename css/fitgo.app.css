@@ -694,7 +694,7 @@ p{ word-wrap:break-word;
 /*--------------侧边栏-----------------*/
 .bar.bar-stable.homeHeader{
 	background-color: #fff;
-	border-color:#f6f6f6;
+	border:1px solid #f4f4f4;
 	background-image: none;
 	padding: 20px 10px;
 	min-height: 8.5rem;
@@ -709,6 +709,12 @@ p{ word-wrap:break-word;
 	position: static;
 }
 .headerRow{
-	padding-top: 0px;
-	padding-bottom: 0px;
+	padding-top: 2px;
+	padding-bottom: 5px;
+}
+.nameHeader{
+	font-weight: 500;
+	font-size: 1.6rem;
+	color: #000;
+	font-family: "SourceSansPro-Regular";
 }
