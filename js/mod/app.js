@@ -91,7 +91,10 @@ angular.module('FitGoApp', ['ionic','FitGoApp.config','FitGoApp.services'])
         "homepage",{
             url:"/homepage",
             abstract:true,
-            templateUrl:"pages/homepage/homepage_index.html"
+            templateUrl:"pages/homepage/homepage_index.html",
+            controller('name', ['', function(){
+                
+            }])
         })
     .state(
         "homepage.home",

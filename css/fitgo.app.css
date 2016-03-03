@@ -686,8 +686,29 @@ p{ word-wrap:break-word;
 	color: #999999;
 }
 .agreeColor{
-	background-color: #777;
+	background-color: #E7FFE7;
 }
 .disagreeColor{
-	background-color: #444;
+	background-color: #FFF2F2;
+}
+/*--------------侧边栏-----------------*/
+.bar.bar-stable.homeHeader{
+	background-color: #fff;
+	border-color:#f6f6f6;
+	background-image: none;
+	padding: 20px 10px;
+	min-height: 8.5rem;
+	position: static;
+}
+.homeHeader img{
+	width: 4rem;
+	height: 4rem;
+	border-radius: 50%;
+}
+.myContent{
+	position: static;
+}
+.headerRow{
+	padding-top: 0px;
+	padding-bottom: 0px;
 }
