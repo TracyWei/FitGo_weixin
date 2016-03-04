@@ -136,6 +136,7 @@ angular.module('FitGoApp', ['ionic','FitGoApp.config','FitGoApp.services'])
             templateUrl:"pages/homepage/thirdTabDetail.html",
             controller:"everyItemController"
         })
+    //
     .state(
         "testpage",{
             url:"/testpage",

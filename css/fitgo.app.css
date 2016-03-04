@@ -735,3 +735,8 @@ p{ word-wrap:break-word;
 	padding-left: 1.4rem;
 	padding-top: 0px!important;
 }
+.personalImg{
+	position: fixed;
+	top: 240px;
+	right: -32px;
+}
