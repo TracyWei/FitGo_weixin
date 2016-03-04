@@ -39,9 +39,12 @@
         <span>{{basic_info.join_date}}加入FitGo</span>
       </div>
       <div class="row headerRow">
+        <!-- <img src="./img/homepage/4.png" style="width:1.2rem;height:1.2rem;">
         <img src="./img/homepage/4.png" style="width:1.2rem;height:1.2rem;">
-        <img src="./img/homepage/4.png" style="width:1.2rem;height:1.2rem;">
-        <img src="./img/homepage/4.png" style="width:1.2rem;height:1.2rem;">
+        <img src="./img/homepage/4.png" style="width:1.2rem;height:1.2rem;"> -->
+        <span class="ion-ribbon-b" style="color:#EEA702;padding-right:3px;font-size:1.6rem"></span>
+        <span class="ion-ribbon-b" style="color:#EEA702;padding-right:3px;font-size:1.6rem"></span>
+        <span class="ion-ribbon-b" style="color:#EEA702;padding-right:3px;font-size:1.6rem"></span>
       </div>
     </div>
   </div>
@@ -49,13 +52,22 @@
 <ion-content class="has-header myContent">
 <ion-list>
 <ion-item nav-clear menu-close>
-  <span>基本信息</span>
+  <span class="iconSpan ion-ios-paper"></span>
+  <span class="col-10 leftSpan">基本信息</span>
+  <span class="ion-ios-arrow-forward rightSpan" style="float:right"></span>
+  <div class="row pesonalP">查看或修改我的基本信息</div>
 </ion-item>
-<ion-item nav-clear menu-close href="#/app/browse">
-Browse
+<ion-item nav-clear menu-close>
+  <span class="iconSpan ion-happy-outline"></span>
+  <span class="leftSpan">约过谁</span>
+  <span class="ion-ios-arrow-forward rightSpan" style="float:right"></span>
+  <div class="row pesonalP">查看或评价我约过的小伙伴</div>
 </ion-item>
-<ion-item nav-clear menu-close href="#/app/playlists">
-Playlists
+<ion-item nav-clear menu-close>
+  <span class="iconSpan ion-ios-settings-strong"></span>
+  <span class="col-10 leftSpan">设置</span>
+  <span class="ion-ios-arrow-forward rightSpan" style="float:right"></span>
+  <div class="row pesonalP">设置我的FitGo</div>
 </ion-item>
 </ion-list>
 </ion-content>
