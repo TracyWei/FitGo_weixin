@@ -124,7 +124,7 @@ angular.module('FitGoApp', ['ionic','FitGoApp.config','FitGoApp.services'])
             views:{
                 "homepage-message":{
                     templateUrl:"pages/homepage/message.html",
-                    controller:"MyCtrl"
+                    controller:"myYueController"
                 }
             }
         })
