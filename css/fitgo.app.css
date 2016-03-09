@@ -483,6 +483,7 @@ p{ word-wrap:break-word;
 	padding: 17px 10px 5px 15px;
 	font-weight: 300;
 	margin-bottom: 0px;
+	font-family: "Microsoft YaHei"
 }
 .list{
 	padding-top: 0px;
@@ -640,11 +641,97 @@ p{ word-wrap:break-word;
 	top: 24px;
 	right: 18px;
 }
-.myItemList{
+.myItemList,.everyoneList{
 	border: 1px solid #FAF6F6;
+}
+.myItemList{
 	padding-top:22px;
 	padding-bottom: 22px;
 }
 .myItemList span{
 	font-family: "Microsoft YaHei";
+}
+.everyoneList{
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.agreeBtn,.disagreeBtn{
+	border-radius: 30px;
+	min-height: 1.5rem;
+	font-size: 1.4rem;
+	border:none;
+	color: #fff;
+	font-family: "Microsoft YaHei"
+}
+.agreeBtn{
+	background-color: #7FE87F;
+}
+.disagreeBtn{
+	background-color: #ef473a;
+}
+.disagreeBtn.activated{
+	background-color: #A6150A;
+}
+.agreeBtn.activated{
+	background-color: #217B21;
+}
+.color_f{
+	color: #FF9999;
+}
+.color_m{
+	color:#54D3F2;
+}
+.color_n{
+	color: #999999;
+}
+.agreeColor{
+	background-color: #E7FFE7;
+}
+.disagreeColor{
+	background-color: #FFF2F2;
+}
+/*--------------侧边栏-----------------*/
+.bar.bar-stable.homeHeader{
+	background-color: #fff;
+	border:1px solid #f4f4f4;
+	background-image: none;
+	padding: 20px 10px;
+	min-height: 8.5rem;
+	position: static;
+}
+.homeHeader img{
+	width: 4rem;
+	height: 4rem;
+	border-radius: 50%;
+}
+.myContent{
+	position: static;
+}
+.headerRow{
+	padding-top: 2px;
+	padding-bottom: 5px;
+}
+.nameHeader{
+	font-weight: 500;
+	font-size: 1.6rem;
+	color: #000;
+	font-family: "SourceSansPro-Regular";
+}
+.leftSpan{
+	color: #000;
+	font-family: "Microsoft YaHei";
+}
+.rightSpan{
+	color: #888;
+}
+.iconSpan{
+	color:#54D3F2;
+	font-size: 1.8rem; 
+}
+.pesonalP{
+	color: #888;
+	font-size: 0.8rem;
+	padding-left: 1.4rem;
+	padding-top: 0px!important;
 }
