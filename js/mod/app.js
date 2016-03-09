@@ -129,6 +129,15 @@ angular.module('FitGoApp', ['ionic','FitGoApp.config','FitGoApp.services'])
                 }
             }
         })
+
+    //个人主页
+    .state(
+        "mypageDetail",
+        {
+            url:"/mypageDetail",
+            templateUrl:"pages/homepage/mypageDetail.html",
+            controller:"myYueController"
+        })
     //约我的详情
     .state(
         "yueDetail",{
@@ -136,12 +145,16 @@ angular.module('FitGoApp', ['ionic','FitGoApp.config','FitGoApp.services'])
             templateUrl:"pages/homepage/thirdTabDetail.html",
             controller:"everyItemController"
         })
+
+
     .state(
         "testpage",{
             url:"/testpage",
             templateUrl:"testpage.html",
             controller:"pagetestCtrl"
         });
+
+
     $urlRouterProvider.otherwise('/welcome');
 })
 .controller('MyCtrl', function($scope,$state) {
