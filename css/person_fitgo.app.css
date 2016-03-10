@@ -31,11 +31,11 @@
 .infotext {
     font-weight: 500;
     font-size: 1.6rem;
-    color: #000;
+    color: #999;
     font-family: "SourceSansPro-Regular";
 }
 .infotext_bold {
-    font-weight: 900;
+    font-weight: 500;
     font-size: 1.6rem;
     color: #000;
     font-family: "SourceSansPro-Regular";
