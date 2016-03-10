@@ -146,6 +146,13 @@ angular.module('FitGoApp', ['ionic','FitGoApp.config','FitGoApp.services'])
             controller:"everyItemController"
         })
 
+    //侧边栏基本信息
+    .state(
+        "basicInfo",{
+            url:"/basicInfo",
+            templateUrl:"pages/homepage/basic_info.html",
+            controller:"basicInfoController"
+        })
 
     .state(
         "testpage",{
