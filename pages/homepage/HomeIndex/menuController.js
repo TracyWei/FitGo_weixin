@@ -4,4 +4,40 @@ angular.module('FitGoApp').
 		$scope.getBack=function(){
 			$state.go($rootScope.lastState);
 		}
+		var basicInfo={
+			name:"Lalala",
+			school:"东南大学九龙湖校区",
+			gender:"女",
+			year:"2013",
+			contact:"18351988168",
+			nameShow:false,
+			genderShow:false,
+			yearShow:false,
+			contactShow:false
+		}
+		$scope.basicInfo=basicInfo;
+		$scope.clickName=function(){
+			basicInfo.nameShow=!basicInfo.nameShow;
+		}
+		$scope.conName=function(){
+			basicInfo.nameShow=false;
+		}
+		$scope.clickGender=function(){
+			basicInfo.genderShow=!basicInfo.genderShow;
+		}
+		$scope.conGender=function(){
+			basicInfo.genderShow=false;
+		}
+		$scope.clickYear=function(){
+			basicInfo.yearShow=!basicInfo.yearShow;
+		}
+		$scope.conYear=function(){
+			basicInfo.yearShow=false;
+		}
+		$scope.clickContact=function(){
+			basicInfo.contactShow=!basicInfo.contactShow;
+		}
+		$scope.conContact=function(){
+			basicInfo.contactShow=false;
+		}
 	}]);

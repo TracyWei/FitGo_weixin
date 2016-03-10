@@ -6,13 +6,67 @@
 type="bar-positive"
 back-button-type="button-icon"
 back-button-icon="ion-arrow-left-c"></ion-nav-bar> -->
-<ion-nav-buttons side="left">
-<button class="button button-icon icon ion-ios-arrow-back" nav-transition="ios" animation="slide-left-right" ng-click="getBack()"
-style="font-size:16.2px;">&nbsp;约我的</button>
-</ion-nav-buttons>
-<ion-content  class="has-header">
-<div class="list">
-<a ui-sref="user.change-password">aaa</a>
-</div>
-</ion-content>
+	<ion-nav-buttons side="left">
+		<button class="button button-icon icon ion-ios-arrow-back" nav-transition="ios" animation="slide-left-right" ng-click="getBack()"
+		style="font-size:16.2px;">&nbsp;约我的
+		</button>
+	</ion-nav-buttons>
+	<ion-content  class="has-header">
+		<div class="myPhoto">
+			<img src="./img/homepage/photo.jpg" style="border-radius:50%;">
+		</div>
+		<div class="list">
+			<div class="item item-icon-left myItemList smallerItem" href="#" ng-click="clickName()">
+				<i class="icon ion-icecream span_color ionSize"></i>
+				<span>昵称</span>
+				<span class="item-note" style="color:#EEA702;">
+					{{basicInfo.name}}
+				</span>
+			</div>
+			<div class="basicInfoInput row" ng-show="basicInfo.nameShow">
+                <input type="text" ng-model="basicInfo.name" class="col-80">
+                <button class="button basicInfoBtn" ng-click="conName()">确认</button>
+            </div>
+			<div class="item item-icon-left myItemList smallerItem" href="#">
+				<i class="icon ion-ios-navigate ionSize span_color"></i>
+				<span>校区</span>
+				<span class="item-note" style="color:#EEA702;">
+					{{basicInfo.school}}
+				</span>
+			</div>
+			<div class="item item-icon-left myItemList smallerItem" href="#"  ng-click="clickGender()">
+				<i class="ion-contrast ionSize span_color icon"></i>
+				<span>性别</span>
+				<span class="item-note" style="color:#EEA702;">
+					{{basicInfo.gender}}
+				</span>
+			</div>
+			<div class="basicInfoInput row" ng-show="basicInfo.genderShow">
+                <input type="text" ng-model="basicInfo.gender" class="col-80">
+                <button class="button basicInfoBtn" ng-click="conGender()">确认</button>
+            </div>
+			<div class="item item-icon-left myItemList smallerItem" href="#" ng-click="clickYear()">
+				<i class="ion-calendar ionSize icon span_color "></i>
+				<span>入学年份</span>
+				<span class="item-note" style="color:#EEA702;">
+					{{basicInfo.year}}
+				</span>
+			</div>
+			<div class="basicInfoInput row" ng-show="basicInfo.yearShow">
+                <input type="text" ng-model="basicInfo.year" class="col-80">
+                <button class="button basicInfoBtn" ng-click="conYear()">确认</button>
+            </div>
+			<div class="item item-icon-left myItemList smallerItem" href="#" ng-click="clickContact()">
+				<i class="icon ion-ios-telephone ionSize span_color"></i>
+				<span>联系方式</span>
+				<span class="item-note" style="color:#EEA702;">
+					{{basicInfo.contact}}
+				</span>
+			</div>
+			<div class="basicInfoInput row" ng-show="basicInfo.contactShow">
+                <input type="text" ng-model="basicInfo.contact" class="col-80">
+                <button class="button basicInfoBtn" ng-click="conContact()">确认</button>
+            </div>
+		</div>
+	</ion-content>
 </ion-view>
