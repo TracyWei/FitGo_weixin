@@ -740,3 +740,7 @@ p{ word-wrap:break-word;
 	top: 240px;
 	right: -32px;
 }
+.item-complex .item-content, .item-radio .item-content{
+	padding:16px;
+	font-size: 100%;
+}

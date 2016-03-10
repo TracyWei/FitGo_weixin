@@ -91,6 +91,7 @@ angular.module('FitGoApp', ['ionic','FitGoApp.config','FitGoApp.services'])
         "homepage",{
             url:"/homepage",
             abstract:true,
+            cache:false,
             templateUrl:"pages/homepage/homepage_index.html",
             controller:"homeIndexController"
         })
@@ -110,6 +111,7 @@ angular.module('FitGoApp', ['ionic','FitGoApp.config','FitGoApp.services'])
         "homepage.history_yue",
         {
             url:"/history_yue",
+            cache:false,
             views:{
                 "homepage-history_yue":{
                     templateUrl:"pages/homepage/history_yue.html",
@@ -151,7 +153,7 @@ angular.module('FitGoApp', ['ionic','FitGoApp.config','FitGoApp.services'])
         "basicInfo",{
             url:"/basicInfo",
             templateUrl:"pages/homepage/basic_info.html",
-            controller:"basicInfoController"
+            controller:"menuController"
         })
 
     .state(
