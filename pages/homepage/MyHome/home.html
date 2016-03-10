@@ -1,0 +1,152 @@
+<ion-view id="yue_home" title="主页">
+<ion-nav-buttons side="left">
+<button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+</ion-nav-buttons>
+<ion-nav-buttons side="right">
+<button class="button search_btn">
+<label class="ion-search btn_font_size"></label>
+</button>
+</ion-nav-buttons>
+<ion-content  direction="y" >
+<div class="home_slide">
+    <ion-slide-box does-continue="true" auto-play="true"  slide-interval="300000" on-slide-changed="slideHasChanged($index)" >
+    <ion-slide class="yue_background">
+    <div class="yue_button">
+        <p>约上小伙伴一起健身吧ヾ(o◕∀◕)ﾉ</p>
+        <button class="button button-block z_btn yue_btn" ng-click="wangToYue()"><p>我 要 约</p></button>
+    </div>
+    </ion-slide>
+    <ion-slide class="yue_background">
+    <div class="introduce">
+        <p class>FitGo</p>
+        <p>让健身不再孤独</p>
+    </div>
+    </ion-slide>
+    <ion-slide class="yue_background">
+    <div class="goals">
+        <p>我的目标(｡・`ω´･)</p>
+        <input type="text" class="goal_input">
+    </div>
+    </ion-slide>
+    <ion-slide class="yue_background">
+    <div class="add_btn">
+        <p class="ion-plus"></p>
+        <p>添加好友</p>
+    </div>
+    </ion-slide>
+    </ion-slide-box>
+    <div class="list choose_yue_items" ng-show="appearance.inputYueDiv">
+        <p class="list_title">约の详情</p>
+        <label class="item item-input item-select">
+            <div class="input-label col-25">
+                项目
+            </div>
+            <select ng-show="appearance.oitems" ng-change="itemChange()" ng-model="selections.selectItems" ng-options="x.id as x.name for x in items">
+                <!-- <option value="">请选择健身项目</option> -->
+            </select>
+            <div class="col-75 input_in_list" ng-show="appearance.mitems">
+                <input type="text" ng-model="selections.myitem">
+            </div>
+        </label>
+        <label class="item item-input item-select">
+            <div class="input-label col-25">
+                地点
+            </div>
+            <select ng-show="appearance.olocations" ng-change="locationChange()" ng-model="selections.selectLocations"
+                ng-options="x.id as x.name for x in locations">
+            </select>
+            <div class="col-75 input_in_list" ng-show="appearance.mlocations">
+                <input type="text" ng-model="selections.mylocation">
+            </div>
+        </label>
+        <label class="item item-input item-select">
+            <div class="input-label col-25">
+                起始时间
+            </div>
+            <div class="timePicker col-75">
+                <input type="datetime-local" value="2016-02-26T10:00" >
+            </div>
+        </label>
+        <label class="item item-input item-select">
+            <div class="input-label col-25">
+                结束时间
+            </div>
+            <div class="timePicker col-75">
+                <input type="datetime-local" value="2016-02-26T20:00" >
+            </div>
+        </label>
+        <label class="item item-input item-select" ng-click="showLabel()">
+            <div class="input-label col-25">
+                标签
+            </div>
+            <span class="ion-chevron-down down_icon col-75" ></span>
+        </label>
+        <div class="myItem" ng-show="appearance.labelS">
+            <div class="mycard" ng-repeat="label in myLabels">
+                <div class="cardContent" ng-click="clickItem(label.id,label.markS,label.name,label.count)">
+                    <span>{{label.name}}</span>
+                    <span class="ion-checkmark littlemark" ng-show="label.markS"></span>
+                </div>
+            </div>
+            <div class="mycard">
+                <div class="cardContent plusDiv" ng-click="addLabel()">
+                    <span class="ion-plus" style="font-size:12px"></span>
+                </div>
+            </div>
+        </div>
+        <div class="item item-input item-select row" ng-show="appearance.inputS">
+            <div class="col-75" style="padding-left:1rem;">
+                <input type="text" style="color:#EEA702" ng-model="inputLabel.myOwnLabel">
+            </div>
+            <div class="input-label addLabelBtn" ng-click="toAddLabel()">
+                确定
+                <span class="ion-checkmark col-25" ></span>
+            </div>
+        </div>
+        <label class="item item-input item-select">
+            <div class="input-label">
+                性别要求
+            </div>
+            <select>
+                <option selected>妹纸</option>
+                <option>汉纸</option>
+                <option>随意_(:з」∠)_</option>
+            </select>
+        </label>
+        <div class="myItem row">
+            <div class="col-25" style="font-size:1.4rem;color:#444;font-weight:500;">
+                备注
+            </div>
+            <div class="mytextarea col-75">
+                <textarea col="30" row="5"></textarea>
+            </div>
+        </div>
+        <div class="row">
+            <button class="button button-block z_btn weixin" style="height:20%;">
+            发起邀请
+            </button>
+        </div>
+    </div>
+    <div class="list displayYue">
+        <div class="row" style="padding-bottom:0px;border-top:1px solid #f4f4f4;">
+            <div class="item item-thumbnail-left" style="width:85%">
+                <img src="./img/homepage/photo.jpg">
+                <h2>王小明<span style="color:#EEA702;font-size:1.6rem;">&nbsp;#瘦二十斤#&nbsp;</span></h2>
+                <p>项目:羽毛球</p>
+                <p>时间:<span class="timeSpan">02/28 上午10:00-上午12:00</span></p>
+                <p>地点:钢菊</p>
+                <p ng-show="yueItem.yueDetailS" class="remark">备注:啊哈哈哈啊哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈</p>
+            </div>
+            <div style="width:15%"><button class="button button-block z_btn yuebtn" style="margin-top:2.8rem;" ng-click="yue
+            ()">{{words.yuebtn}}</button></div>
+        </div>
+        <div class="detailDiv">
+            <div class="yueDetail" ng-click="getMoreDetail()">
+                <span class="ion-more"></span>
+            </div>
+        </div>
+        <div class="message" ng-show="yueItem.messageS">消息发送成功~可在"我约的"中查看详情</div>
+    </div>
+</div>
+</ion-content>
+</ion-view>

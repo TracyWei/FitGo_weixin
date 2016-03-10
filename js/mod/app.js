@@ -92,16 +92,17 @@ angular.module('FitGoApp', ['ionic','FitGoApp.config','FitGoApp.services'])
             url:"/homepage",
             abstract:true,
             cache:false,
-            templateUrl:"pages/homepage/homepage_index.html",
+            templateUrl:"pages/homepage/HomeIndex/homepage_index.html",
             controller:"homeIndexController"
         })
     .state(
         "homepage.home",
         {
             url:"/home",
+            cache:false,
             views:{
                 "homepage-home":{
-                    templateUrl:"pages/homepage/home.html",
+                    templateUrl:"pages/homepage/MyHome/home.html",
                     controller:"toYueController"
                 }
             }
@@ -114,7 +115,7 @@ angular.module('FitGoApp', ['ionic','FitGoApp.config','FitGoApp.services'])
             cache:false,
             views:{
                 "homepage-history_yue":{
-                    templateUrl:"pages/homepage/history_yue.html",
+                    templateUrl:"pages/homepage/MyHistoryYue/history_yue.html",
                     controller:"thirdTabController"
                 }
             }
@@ -124,9 +125,10 @@ angular.module('FitGoApp', ['ionic','FitGoApp.config','FitGoApp.services'])
         "homepage.message",
         {
             url:"/message",
+            cache:false,
             views:{
                 "homepage-message":{
-                    templateUrl:"pages/homepage/message.html",
+                    templateUrl:"pages/homepage/MyYue/message.html",
                     controller:"myYueController"
                 }
             }
@@ -137,14 +139,14 @@ angular.module('FitGoApp', ['ionic','FitGoApp.config','FitGoApp.services'])
         "mypageDetail",
         {
             url:"/mypageDetail",
-            templateUrl:"pages/homepage/mypageDetail.html",
+            templateUrl:"pages/homepage/MyPage/mypageDetail.html",
             controller:"infoController"
         })
     //约我的详情
     .state(
         "yueDetail",{
             url:"/history_yue/yueDetail",
-            templateUrl:"pages/homepage/thirdTabDetail.html",
+            templateUrl:"pages/homepage/MyHistoryYue/thirdTabDetail.html",
             controller:"everyItemController"
         })
 
@@ -152,7 +154,7 @@ angular.module('FitGoApp', ['ionic','FitGoApp.config','FitGoApp.services'])
     .state(
         "basicInfo",{
             url:"/basicInfo",
-            templateUrl:"pages/homepage/basic_info.html",
+            templateUrl:"pages/homepage/HomeIndex/basic_info.html",
             controller:"menuController"
         })
 

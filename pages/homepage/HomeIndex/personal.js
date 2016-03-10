@@ -6,6 +6,7 @@ angular.module('FitGoApp')
 		}
 		$scope.basic_info=basic_info;
 		// console.log($ionicHistory.currentStateName());
+		$rootScope.lastState="homepage.home";
 		$scope.clickFirstTab=function(){
 			$rootScope.lastState = "homepage.message";
 
@@ -14,6 +15,7 @@ angular.module('FitGoApp')
 		$scope.clickSecondTab=function(){
 			$rootScope.lastState="homepage.home";
 			$state.go("homepage.home");
+			console.log("home");
 		}
 		$scope.clickThirdTab=function(){
 			$rootScope.lastState="homepage.history_yue";
