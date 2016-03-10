@@ -1,0 +1,52 @@
+.personal_info img {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+   
+}
+.col_center{
+	/*margin-top: 1rem;*/
+	 text-align: center;
+}
+.personal_info{
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	margin-left: 1.5rem;
+	margin-right: 1.5rem;
+}
+.row_info_line{
+	border-bottom: 1px solid #CCC;
+}
+.row_info{
+	padding: 1rem;
+}
+.row_info+.row_info{
+	margin-top: 15px;
+	margin-bottom: 10px;
+}
+
+.row_ribbon{
+	margin-top: 10px !important;
+}
+.infotext {
+    font-weight: 500;
+    font-size: 1.6rem;
+    color: #000;
+    font-family: "SourceSansPro-Regular";
+}
+.infotext_bold {
+    font-weight: 900;
+    font-size: 1.6rem;
+    color: #000;
+    font-family: "SourceSansPro-Regular";
+}
+.row_gap{
+	height: 1rem;
+}
+.info_box{
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	border-top: 1px solid #eee;
+	border-bottom: 1px solid #eee;
+
+}

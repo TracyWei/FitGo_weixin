@@ -136,7 +136,7 @@ angular.module('FitGoApp', ['ionic','FitGoApp.config','FitGoApp.services'])
         {
             url:"/mypageDetail",
             templateUrl:"pages/homepage/mypageDetail.html",
-            controller:"myYueController"
+            controller:"infoController"
         })
     //约我的详情
     .state(

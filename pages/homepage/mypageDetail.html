@@ -6,9 +6,80 @@
 <button class="button button-icon icon ion-ios-home" ui-sref="homepage.home"></button>
 </ion-nav-buttons>
 <ion-content  direction="y" >
-<div >
- 
-  个人主页
+<div class="personal_info">
+	<div class="row">
+		<div class="col-30">
+			<div class="col_center">
+				<img src="./img/homepage/photo.jpg">
+			</div>
+		</div>
+		<div class="col">
+			<div class="row headerRow">
+				<span class="infotext">{{page_info.name}}</span>
+			</div>
+			<div class="row headerRow">
+				<span class="ion-ribbon-b" style="color:#EEA702;padding-right:3px;font-size:1.6rem"></span>
+				<span class="ion-ribbon-b" style="color:#EEA702;padding-right:3px;font-size:1.6rem"></span>
+				<span class="ion-ribbon-b" style="color:#EEA702;padding-right:3px;font-size:1.6rem"></span>
+			</div>
+			<div class="row headerRow">
+				<span class="infotext">{{page_info.join_date}}</span>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+      <div class="row_gap">
+			
+			</div>
+	</div>
+	<div class="info_box">
+	<div class="row">
+		<div class="row row_info row_info_line">
+			<div class="col-30">
+				<span class="infotext_bold">校区：</span>
+			</div>
+			<div class="col-70">
+				
+				<span class="infotext">{{page_info.campus}}</span>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="row row_info row_info_line">
+			<div class="col-30">
+				<span class="infotext_bold">签名：</span>
+			</div>
+			<div class="col-70">
+				
+				<span class="infotext">{{page_info.signature}}</span>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="row row_info row_info_line">
+			<div class="col-30">
+				<span class="infotext_bold">性别：</span>
+			</div>
+			<div class="col-70">
+				
+				<span class="infotext">{{page_info.gender}}</span>
+				
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="row row_info">
+			<div class="col-30">
+				<span class="infotext_bold">入学年份：</span>
+			</div>
+			<div class="col-70">
+				
+				<span class="infotext">{{page_info.school_year}}</span>
+				
+			</div>
+		</div>
+	</div>
+	</div>
 </div>
 </ion-content>
 </ion-view>
